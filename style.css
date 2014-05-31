@@ -14,6 +14,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .sticky {}
 .bypostauthor {}
 
+/* Header */
+
+.hgroup {
+    background-image: url("images/logo.png");
+    height: 220px;
+    width: 280px;
+}
+
+.hgroup h1{
+	display: none;
+}
+
+.hgroup h2{
+	display: none;
+}
+
 .col-lg-3 {
     width: 280px;
 }

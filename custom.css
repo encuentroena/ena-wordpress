@@ -1,0 +1,97 @@
+/*
+Theme Name: ENA-Custom
+Theme URI: https://github.com/encuentroena
+Author: Equipo de ENA
+Description: Tema de Wordpress para el sitio principal de ENA. Basadao en el tema Flat is a WordPress Blog Theme designed by YoArts. We like to say that Flat de yoarts.com.
+Version: 0.0.1
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* Fonts */
+
+@import url(http://fonts.googleapis.com/css?family=Medula+One);
+
+/* Header */
+
+.hgroup {
+    background-image: url("images/logo.png");
+    height: 220px;
+    width: 280px;
+}
+
+.hgroup img {
+    height: 177px;
+    opacity: 0;
+    width: 211px;
+}
+
+.hgroup h2{
+	display: none;
+}
+
+.col-lg-3 {
+    width: 280px;
+}
+
+/* Bakcground */
+
+#page:before {
+    content: "";
+    display: block;
+    float: left;
+    height: 600px;
+    left: -360px;
+    margin-right: -360px;
+    position: relative;
+    top: 0;
+    width: 360px;
+}
+
+/* Menu */
+
+#site-navigation a {
+    font-family: 'Medula One',cursive;
+    font-size: 35px;
+    line-height: 70px;
+    padding: 0;
+}
+
+#site-navigation li {
+    text-align: right;
+}
+
+#site-navigation .menu-item-has-children .fa, #site-navigation .page_item_has_children .fa {
+    height: 70px;
+    line-height: 70px;
+}
+
+.menu-item a:before {
+    content: "";
+    display: block;
+    float: left;
+    height: 70px;
+    margin-left: 28px;
+    width: 20px;
+}
+
+#site-navigation .sub-menu a {
+    font-family: open sans;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0 20px 0 0;
+}
+
+.sub-menu a:before {
+    content: "";
+    display: block;
+    float: left;
+    height: 40px;
+    margin-left: 28px;
+    width: 20px;
+}
+
+

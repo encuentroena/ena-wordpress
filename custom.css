@@ -49,10 +49,10 @@ body.custom-background {
     content: "";
     display: block;
     float: left;
-    height: 600px;
+    height: 100%;
     left: -360px;
     margin-right: -360px;
-    position: relative;
+    position: absolute;
     top: 0;
     width: 360px;
 }
@@ -120,5 +120,17 @@ body.custom-background {
     z-index:1;
 }
 
+#secondary {
+    height: 100% !important;
+    position: absolute !important;
+}
+
 /* Cuerpo */
 
+.col-lg-9 {
+    width: 920px;
+}
+
+#primary {
+    margin-left: 280px;
+}

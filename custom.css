@@ -18,7 +18,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* Body */
 
 body.custom-background {
-    background: url("images/bg.png") no-repeat fixed 100% 0 rgba(0, 0, 0, 0) !important;
+    background: url("images/bg.jpg") no-repeat fixed 100% 0 rgba(0, 0, 0, 0) !important;
 }
  
 /* Header */
@@ -164,4 +164,358 @@ body.custom-background {
 
 #primary {
     margin-left: 280px;
+}
+
+/* Home */
+
+.site-content.home {
+    min-height: 50em;
+    padding: 30px 20px;
+}
+
+.col-23 {
+    width: 600px;
+    float: left;
+}
+.col-21 {
+    width: 280px;
+}
+
+#banner01 {
+    background: none repeat scroll 0 0 #2E3436;
+    float: left;
+    height: 160px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 540px;
+}
+
+#banner01 > h1 {
+    color: #FFFFFF;
+    font-family: 'Medula One',cursive;
+    font-size: 33pt;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#banner01 > h2 {
+    color: #FFFFFF;
+    font-family: open sans;
+    font-size: 17px;
+    font-weight: normal;
+    margin: 0 20px;
+    text-align: center;
+}
+
+
+#banner01:before {
+    background: url("images/banner01-izq.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    display: block;
+    float: left;
+    height: 160px;
+    margin-left: -20px;
+    width: 20px;
+}
+
+
+
+#banner01:before {
+    background: url("images/banner01-izq.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    display: block;
+    float: left;
+    height: 160px;
+    margin-left: -20px;
+    width: 20px;
+}
+
+#banner01:after {
+    background: url("images/banner01-der.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    display: block;
+    float: right;
+    height: 160px;
+    left: 580px;
+    position: absolute;
+    top: 30px;
+    width: 20px;
+}
+
+#videobox {
+    background: url("images/videobox-izq.png") no-repeat scroll 0 0 #CCCCCF;
+    float: left;
+    margin-bottom: 20px;
+    width: 580px;
+    margin-right: 20px;
+}
+
+#videobox:after {
+    background: url("images/videobox-dw.png") no-repeat scroll 0 0 #CCCCCF;
+    content: "";
+    display: block;
+    height: 10px;
+    width: 580px;
+}
+
+.iframe {
+    background: none repeat scroll 0 0 #EEEEEE;
+    height: 315px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 560px;
+}
+
+.tbox {
+    background-position: 20px bottom;
+    background-repeat: no-repeat;
+    float: left;
+    height: 50px;
+    margin-bottom: 20px;
+    width: 580px;
+    margin-right: 20px;
+}
+
+.tbox:after {
+    content: "";
+    display: block;
+    float: right;
+    height: 50px;
+    width: 50px;
+}
+
+#news-ena {
+    background-color: #666666;
+    background-image: url("images/news-h.png");
+}
+
+#news-ena:after {
+    background: url("images/news-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#news-ena:hover:after {
+    background: url("images/more-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#news-members {
+    background-color: #d64747;
+    background-image: url("images/members-h.png");
+}
+
+#news-members:after {
+    background: url("images/member-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.news-item {
+    float: left;
+    height: 140px;
+    width: 280px;
+    margin-bottom: 20px;
+    background-position: center center !important;
+    background-size: cover !important;
+    position: relative;
+}
+.news-item-focus {
+    height: 300px !important;
+    margin-right: 20px;
+}
+
+.news-item:before {
+    content: "";
+    display: block;
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+.news-item.encuentro:before {
+    background: url("images/encuentro-icon.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.news-item.ideas:before {
+    background: url("images/ideas-icon.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.news-item.ena:before {
+    background: url("images/world-icon.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.news-item-focus .news-info {
+    height: 100px !important;
+}
+
+.news-info {
+    bottom: 0;
+    height: 50px;
+    padding-right: 8px;
+    position: absolute;
+    width: 280px;
+}
+
+.encuentro .news-info {
+    background: none repeat scroll 0 0 rgba(161, 108, 216, 0.8);
+}
+
+.encuentro .news-info:hover {
+    background: none repeat scroll 0 0 rgba(161, 108, 216, 1.0);
+}
+
+.ideas .news-info {
+    background: none repeat scroll 0 0 rgba(229, 182, 92, 0.8);
+}
+
+.ideas .news-info:hover {
+    background: none repeat scroll 0 0 rgba(229, 182, 92, 1.0);
+}
+
+.ena .news-info {
+    background: none repeat scroll 0 0 rgba(255, 255, 112, 0.8);
+}
+
+.ena .news-info:hover {
+    background: none repeat scroll 0 0 rgba(255, 255, 112, 1.0);
+}
+
+.news-fecha {
+    color: #FFFFFF;
+    float: left;
+    font-family: "Open Sans";
+    font-size: 11pt;
+    font-weight: bold;
+    line-height: 16px;
+    padding-right: 8px;
+    padding-top: 7px;
+    text-align: right;
+    width: 50px;
+}
+
+.news-item-focus .news-fecha {
+    padding-top: 20px;
+}
+
+.news-h {
+    font-family: "Open Sans";
+    font-weight: normal;
+    line-height: 16px;
+    margin-top: 7px;
+    padding-right: 8px;
+    text-align: right;
+}
+
+.news-h a {
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+}
+
+.ena .news-h a {
+    color:  #000000 !important;
+    text-decoration: none !important;
+}
+
+.ena .news-fecha {
+    color: #000000;
+}
+
+.news-item-focus .news-h {
+    font-size: 22px;
+    line-height: 23px;
+    margin-top: 15px;
+}
+
+.news-memb-item {
+    float: left;
+    height: 75px;
+    width: 280px;
+    margin-bottom: 10px;
+    position: relative;
+    background: white;
+    margin-right: 20px;
+}
+
+.news-memb-fecha {
+    float: left;
+    height: 75px;
+    width: 50px;
+    background: #d64747;
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 11pt;
+    font-weight: bold;
+    line-height: 16px;
+    padding-right: 8px;
+    padding-top: 7px;
+    text-align: right;
+}
+
+.news-memb-info {
+    font-family: "Open Sans";
+    font-weight: normal;
+    line-height: 12px;
+    margin-top: 7px;
+    padding-right: 8px;
+    text-align: right;
+    color: black;
+    font-size: 11pt;
+}
+
+.news-memb-h {
+    clear: right;
+    float: right;
+    font-size: 12pt;
+    font-weight: bold;
+    line-height: 14px;
+    margin-top: 10px;
+    width: 180px;
+}
+
+.news-memb-info a {
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+
+.news-memb-s {
+    float: right;
+}
+
+#banner02 {
+    background: url("images/banner02.png") no-repeat scroll left bottom #A16CD8;
+    float: left;
+    height: 280px;
+    width: 280px;
+    position: relative;
+    margin-top: 20px;
+}
+
+#banner02:before {
+    background: url("images/banner02-top.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    display: block;
+    float: left;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+    width: 300px;
+}
+
+#banner02:after {
+    background: url("images/banner02-der.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0;
+    content: "";
+    display: block;
+    float: left;
+    height: 300px;
+    position: absolute;
+    right: -20px;
+    width: 20px;
+}
+
+.counter {
+    color: #FFFFFF;
+    font-family: open sans;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 22px;
+    margin-left: 10px;
+    margin-top: 210px;
+    text-align: center;
 }

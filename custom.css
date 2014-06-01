@@ -125,6 +125,37 @@ body.custom-background {
     position: absolute !important;
 }
 
+/* Widget Search */
+
+#secondary .widget {
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 0;
+}
+
+#searchform .field {
+    background: none repeat scroll 0 0 #666666;
+    border-radius: 0;
+    color: #CCCCCF;
+    font-family: open sans;
+    font-weight: normal;
+    width: 230px;
+    height: 50px;
+    float: right;
+}
+
+#searchform .submit {
+    background: url("images/search-icon.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    display: block !important;
+    float: left;
+    font-size: 0;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+}
+
 /* Cuerpo */
 
 .col-lg-9 {

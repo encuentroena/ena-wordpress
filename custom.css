@@ -18,7 +18,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* Body */
 
 body.custom-background {
-    background: url("images/bg.png") no-repeat scroll 100% 0 rgba(0, 0, 0, 0) !important;
+    background: url("images/bg.png") no-repeat fixed 100% 0 rgba(0, 0, 0, 0) !important;
 }
  
 /* Header */

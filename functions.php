@@ -116,5 +116,90 @@ function flat_post_nav() {
 }
 endif;
 
+
+
+
 // Add Theme Customizer functionality.
 require get_template_directory() . '/inc/customizer.php';
+
+
+
+
+
+//register settings
+function theme_settings_init(){
+    register_setting( 'theme_settings', 'theme_settings' );
+}
+
+//add settings page to menu
+function add_settings_page() {
+add_menu_page( __( 'Opciones de ENA' ), __( 'Opciones de ENA' ), 'manage_options', 'settings', 'theme_settings_page');
+}
+
+//add actions
+add_action( 'admin_init', 'theme_settings_init' );
+add_action( 'admin_menu', 'add_settings_page' );
+
+//define your variables
+$color_scheme = array('default','blue','green',);
+
+//start settings page
+function theme_settings_page() {
+
+if ( ! isset( $_REQUEST['updated'] ) )
+$_REQUEST['updated'] = false;
+
+//get variables outside scope
+global $color_scheme;
+?>
+
+<div>
+
+	<div id="icon-options-general"></div>
+	<h2><?php _e( 'Opciones del sitio de ENA' ) //your admin panel title ?></h2>
+
+	<?php
+	//show saved options message
+	if ( false !== $_REQUEST['updated'] ) : ?>
+	<div><p><strong><?php _e( 'Opciones guardadas' ); ?></strong></p></div>
+	<?php endif; ?>
+
+	<form method="post" action="options.php">
+
+	<?php settings_fields( 'theme_settings' ); ?>
+	<?php $options = get_option( 'theme_settings' ); ?>
+
+	<table>
+
+	<!-- Opcion 1: Titulo portada -->
+	<tr valign="top">
+	<th scope="row"><?php _e( 'Titulo de la caja de la portada' ); ?></th>
+	<td><input id="theme_settings[portada:titulo]" type="text" size="36" name="theme_settings[portada:titulo]" value="<?php esc_attr_e( $options['portada:titulo'] ); ?>" />
+	<label for="theme_settings[portada:titulo]"><?php _e( '' ); ?></label></td>
+	</tr>
+
+
+	</table>
+
+	<p><input name="submit" id="submit" value="Guardar" type="submit"></p>
+	</form>
+
+</div><!-- END wrap -->
+
+<?php
+}
+//sanitize and validate
+function options_validate( $input ) {
+    global $select_options, $radio_options;
+    if ( ! isset( $input['option1'] ) )
+        $input['option1'] = null;
+    $input['option1'] = ( $input['option1'] == 1 ? 1 : 0 );
+    $input['sometext'] = wp_filter_nohtml_kses( $input['sometext'] );
+    if ( ! isset( $input['radioinput'] ) )
+        $input['radioinput'] = null;
+    if ( ! array_key_exists( $input['radioinput'], $radio_options ) )
+        $input['radioinput'] = null;
+    $input['sometextarea'] = wp_filter_post_kses( $input['sometextarea'] );
+    return $input;
+}
+?>

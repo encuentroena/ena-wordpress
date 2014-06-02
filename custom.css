@@ -57,7 +57,9 @@ body.custom-background {
     width: 360px;
 }
 
-
+#primary {
+    background: url("images/bg.jpg") no-repeat fixed 100% 0 rgba(0, 0, 0, 0) !important;
+}
 
 /* Menu */
 
@@ -116,7 +118,7 @@ body.custom-background {
 
 #secondary {
     height: 100% !important;
-    position: absolute !important;
+    position: fixed !important;
 }
 
 /* Widget Search */

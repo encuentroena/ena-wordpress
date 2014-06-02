@@ -59,6 +59,7 @@ body.custom-background {
 
 #primary {
     background: url("images/bg.jpg") no-repeat fixed 100% 0 rgba(0, 0, 0, 0) !important;
+    z-index: 0;
 }
 
 /* Menu */
@@ -119,6 +120,7 @@ body.custom-background {
 #secondary {
     height: 100% !important;
     position: fixed !important;
+     z-index: 1;
 }
 
 /* Widget Search */
@@ -514,4 +516,27 @@ body.custom-background {
     margin-left: 10px;
     margin-top: 210px;
     text-align: center;
+}
+
+/* Footer */
+
+.site-info {
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    height: 100px;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+#footer-image {
+    background: url("images/footer02.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: -50px;
+    float: left;
+    height: 668px;
+    left: -30px;
+    position: absolute;
+    width: 1400px;
+    z-index: -1;
 }

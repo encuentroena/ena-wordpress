@@ -102,9 +102,7 @@ $options = get_option( 'theme_settings' ); ?>
 					</div>	
 				</div>
 				<div class="col-13">
-					<div id="banner02">
-						<div class="counter">Faltan 65 días, 9 horas, 34 minutos y 12 segundos.</div>
-					</div>		
+					<?php if ( dynamic_sidebar('portada_columna_derecha') ) : else : endif; ?>
 				</div>
 
 			</div>

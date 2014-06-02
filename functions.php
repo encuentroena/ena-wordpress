@@ -211,3 +211,23 @@ function options_validate( $input ) {
     return $input;
 }
 ?>
+
+
+<?php
+/**
+ * Agregamos la columna derecha del home
+ *
+ */
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name' => 'Portada - columna derecha',
+		'id' => 'portada_columna_derecha',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="rounded">',
+		'after_title' => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );
+?>

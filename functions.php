@@ -178,6 +178,14 @@ global $color_scheme;
 	<label for="theme_settings[portada:titulo]"><?php _e( '' ); ?></label></td>
 	</tr>
 
+	<!-- Opcion 1: Titulo portada -->
+	<tr valign="top">
+	<th scope="row"><?php _e( 'Bajada de la caja de la portada' ); ?></th>
+	<td><input id="theme_settings[portada:bajada]" type="text" size="90" name="theme_settings[portada:bajada]" value="<?php esc_attr_e( $options['portada:bajada'] ); ?>" />
+	<label for="theme_settings[portada:bajada]"><?php _e( 'Una descripción que va debajo del titulo' ); ?></label></td>
+	</tr>
+
+
 
 	</table>
 

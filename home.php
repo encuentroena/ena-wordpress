@@ -16,9 +16,7 @@ $options = get_option( 'theme_settings' ); ?>
 						<h2><?php echo $options['portada:bajada'];?></h2>
 					</div>			
 					<div id="videobox">
-						<div class="iframe">
-					
-						</div>	
+						<iframe class="iframe" src="<?php echo $options['portada:video'];?>" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
 					<div id="news-ena" class="tbox">
 					</div>

@@ -171,18 +171,22 @@ global $color_scheme;
 
 	<table>
 
-	<!-- Opcion 1: Titulo portada -->
 	<tr valign="top">
 	<th scope="row"><?php _e( 'Titulo de la caja de la portada' ); ?></th>
 	<td><input id="theme_settings[portada:titulo]" type="text" size="36" name="theme_settings[portada:titulo]" value="<?php esc_attr_e( $options['portada:titulo'] ); ?>" />
 	<label for="theme_settings[portada:titulo]"><?php _e( '' ); ?></label></td>
 	</tr>
 
-	<!-- Opcion 1: Titulo portada -->
 	<tr valign="top">
 	<th scope="row"><?php _e( 'Bajada de la caja de la portada' ); ?></th>
 	<td><input id="theme_settings[portada:bajada]" type="text" size="90" name="theme_settings[portada:bajada]" value="<?php esc_attr_e( $options['portada:bajada'] ); ?>" />
 	<label for="theme_settings[portada:bajada]"><?php _e( 'Una descripción que va debajo del titulo' ); ?></label></td>
+	</tr>
+
+	<tr valign="top">
+	<th scope="row"><?php _e( 'URL del video de la portada' ); ?></th>
+	<td><input id="theme_settings[portada:video]" type="text" size="36" name="theme_settings[portada:video]" value="<?php esc_attr_e( $options['portada:video'] ); ?>" />
+	<label for="theme_settings[portada:video]"><?php _e( 'Video de YouTube' ); ?></label></td>
 	</tr>
 
 

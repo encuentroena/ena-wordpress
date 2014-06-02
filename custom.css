@@ -45,7 +45,7 @@ body.custom-background {
 
 /* Bakcground */
 
-#page:before {
+#secondary:before {
     content: "";
     display: block;
     float: left;
@@ -57,13 +57,7 @@ body.custom-background {
     width: 360px;
 }
 
-#page {
-    background: none;
-}
 
-#primary {
-    background: none;
-}
 
 /* Menu */
 

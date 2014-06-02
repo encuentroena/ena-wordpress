@@ -1,0 +1,60 @@
+/*
+Theme Name: ENA-Color
+Theme URI: https://github.com/encuentroena
+Author: Equipo de ENA
+Description: Tema de Wordpress para el sitio principal de ENA. Basadao en el tema Flat is a WordPress Blog Theme designed by YoArts. We like to say that Flat de yoarts.com.
+Version: 0.0.1
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* Bakcground */
+
+#secondary:before {
+    background: url("images/fondo-izq.png") no-repeat scroll 0 0 #4C4C4C !important;
+}
+
+/* Menu */
+
+.sub-menu {
+    background: url("images/menu-sombra.png") repeat scroll 0 0 !important;
+}
+
+.menu-item-has-children {
+    background: none repeat scroll 0 0 #333333;
+}
+
+.menu01 a:before {
+    background: none repeat scroll 0 0 #FFFF70;
+}
+
+.menu02 a:before {
+    background: none repeat scroll 0 0 #E5B65C;
+}
+
+.menu03 a:before {
+    background: none repeat scroll 0 0 #D64747;
+}
+
+.menu04 a:before {
+    background: none repeat scroll 0 0 #A26DD8;
+}
+
+.menu05 a:before {
+    background: none repeat scroll 0 0 #6699CC;
+}
+
+.sub-menu .menu-item a:before {
+    opacity:0.5;
+}
+
+#site-navigation a {
+    color: #CCCCCC;
+}
+
+#site-navigation a:hover {
+    color: #FFFFFF;
+}

@@ -634,3 +634,142 @@ body.custom-background {
     padding: 0px 0px;
     position: relative;
 }
+
+/* Post Header */
+.entry-header {
+    float: left;
+    height: 115px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 75px;
+    width: 580px;
+}
+
+.hentry .entry-title {
+    color: #FFFFFF;
+    float: left;
+    font-family: medula one;
+    font-size: 45px;
+    height: 115px;
+    line-height: 40px;
+    margin-top: 0;
+    padding-left: 10px;
+    padding-top: 15px;
+    position: relative;
+    text-align: left;
+    width: 450px;
+}
+
+.entry-header .entry-title:after {
+    content: "";
+    display: block;
+    height: 115px;
+    position: absolute;
+    right: -60px;
+    top: 0;
+    width: 60px;
+}
+
+.entry-header .entry-meta {
+    float: left;
+    font-family: open sans;
+    font-size: 18px;
+    font-weight: bold;
+    height: 115px;
+    padding-right: 7px;
+    padding-top: 20px;
+    text-align: right;
+    width: 70px;
+    line-height: 18px;
+}
+
+
+.category-encuentros .entry-header .entry-title {
+    background: none repeat scroll 0 0 #A26DD8;
+}
+
+.category-encuentros .entry-header .entry-title:after {
+    background: url("images/post-h-af-encuentro.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.category-encuentros .entry-header .entry-meta {
+	background: url('images/post-h-bf-encuentro.png');
+}
+
+.category-ideas .entry-header .entry-title {
+    background: none repeat scroll 0 0 #E5B65C;
+}
+
+.category-ideas .entry-header .entry-title:after {
+    background: url("images/post-h-af-ideas.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.category-ideas .entry-header .entry-meta {
+	background: url('images/post-h-bf-ideas.png');
+}
+
+.category-ena .entry-header .entry-title {
+    background: none repeat scroll 0 0 #FFFF70;
+    color: black !important;
+}
+
+.category-ena .entry-header .entry-title:after {
+    background: url("images/post-h-af-world.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.category-ena .entry-header .entry-meta {
+	background: url('images/post-h-bf-world.png');
+	color: black !important;
+}
+
+.entry-content {
+    float: left;
+    margin-left: 20px;
+}
+
+.entry-excerpt {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    font-family: open sans;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 580px;
+}
+
+.category-ena .entry-excerpt {
+    color: #9B9B44;
+}
+
+.category-ideas .entry-excerpt {
+    color: #8B6F38;
+}
+
+.category-encuentros .entry-excerpt {
+    color: #624283;
+}
+
+.entry-excerpt:before {
+    background: url("images/post-ex-bf.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    float: left;
+    height: 20px;
+    position: relative;
+    top: -20px;
+    width: 580px;
+}
+
+.entry-excerpt:after {
+    background: url("images/post-ex-af.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    float: left;
+    height: 20px;
+    position: relative;
+    bottom: -20px;
+    width: 580px;
+}

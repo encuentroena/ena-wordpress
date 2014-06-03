@@ -8,7 +8,7 @@
 
 				<?php flat_post_nav(); ?>
 
-				<?php comments_template(); ?>
+			<?php comments_template(); ?>
 				
 			<?php endwhile; ?>
 

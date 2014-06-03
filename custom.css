@@ -168,15 +168,16 @@ body.custom-background {
 
 .site-content.home {
     min-height: 50em;
-    padding: 30px 20px;
+    padding: 30px 0px;
 }
 
 .col-23 {
     width: 600px;
     float: left;
 }
-.col-21 {
-    width: 280px;
+.col-13 {
+    width: 300px;
+   float: left;
 }
 
 #banner01 {
@@ -184,8 +185,7 @@ body.custom-background {
     float: left;
     height: 160px;
     margin-bottom: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
     width: 540px;
 }
 
@@ -248,6 +248,8 @@ body.custom-background {
     margin-bottom: 20px;
     width: 580px;
     margin-right: 20px;
+        margin-left: 20px;
+
 }
 
 #videobox:after {
@@ -273,7 +275,8 @@ body.custom-background {
     height: 50px;
     margin-bottom: 20px;
     width: 580px;
-    margin-right: 20px;
+    margin-left: 20px;
+
 }
 
 .tbox:after {
@@ -314,10 +317,10 @@ body.custom-background {
     background-position: center center !important;
     background-size: cover !important;
     position: relative;
+    margin-left: 20px;
 }
 .news-item-focus {
     height: 300px !important;
-    margin-right: 20px;
 }
 
 .news-item:before {
@@ -428,7 +431,7 @@ body.custom-background {
     margin-bottom: 10px;
     position: relative;
     background: white;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .news-memb-fecha {
@@ -483,6 +486,7 @@ body.custom-background {
     width: 280px;
     position: relative;
     margin-top: 20px;
+    margin-left: 20px;
 }
 
 #banner02:before {
@@ -621,4 +625,12 @@ body.custom-background {
     width: 1400px;
     z-index: -1;
      bottom: 0;
+}
+
+/* Post */
+
+.hentry {
+    border-bottom: 0px solid #EEEEEE;
+    padding: 0px 0px;
+    position: relative;
 }

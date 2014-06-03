@@ -604,11 +604,12 @@ body.custom-background {
 /* Footer */
 
 .site-info {
+    color: #FFFFFF;
     float: left;
     font-size: 12px;
     height: 100px;
     overflow: hidden;
-    padding: 0;
+    padding: 20px 0 0;
     text-align: center;
     width: 100%;
 }

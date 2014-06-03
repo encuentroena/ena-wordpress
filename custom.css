@@ -522,21 +522,19 @@ body.custom-background {
 
 .site-info {
     float: left;
-    width: 100%;
     font-size: 12px;
     height: 100px;
     overflow: hidden;
+    padding: 0;
     text-align: center;
+    width: 100%;
 }
 
 
 #footer-image {
-    background: url("images/footer02.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    bottom: -50px;
-    float: left;
-    height: 668px;
-    left: -30px;
+    height: 650px;
     position: absolute;
     width: 1400px;
     z-index: -1;
+     bottom: 0;
 }

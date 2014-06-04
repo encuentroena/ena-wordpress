@@ -705,7 +705,8 @@ body.custom-background {
 }
 
 .category-ideas .entry-header .entry-meta {
-	background: url('images/post-h-bf-ideas.png');
+    background: url("images/post-h-bf-ideas.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #CCCCCF;
 }
 
 .category-ena .entry-header .entry-title {
@@ -724,8 +725,121 @@ body.custom-background {
 
 .entry-content {
     float: left;
+    margin-bottom: 40px;
     margin-left: 20px;
+    padding-top: 10px !important;
+    width: 580px;
 }
+
+
+.category-ena .entry-excerpt {
+    color: #9B9B44;
+}
+
+.category-ideas .entry-excerpt {
+    color: #8B6F38;
+}
+
+.category-encuentros .entry-excerpt {
+    color: #624283;
+}
+
+.entry-excerpt {
+    float: left;
+    font-family: open sans;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 0 20px;
+    text-align: center;
+    text-shadow: -1px 1px 1px #000000;
+    text-transform: uppercase;
+}
+
+.entry-featured {
+    margin-left: 20px;
+    margin-top: 75px;
+}
+
+.entry-social {
+    height: 75px;
+    width: 280px;
+    margin-top: -20px;
+}
+
+.category-encuentros .entry-social {
+    background: url("images/post-ep-encuentro.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.category-ideas .entry-social {
+    background: url("images/post-ep-ideas.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.category-ena .entry-social {
+    background: url("images/post-ep-world.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.entry-thumbnail {
+    background-size: cover !important;
+    height: 245px;
+    width: 280px;
+}
+
+.entry-content blockquote {
+    border-left: medium none;
+    color: #000000;
+    float: left;
+    font-family: open sans;
+    font-size: 23px;
+    font-style: italic;
+    line-height: 27px;
+    padding: 10px !important;
+    text-align: center;
+    width: 280px;
+    position: relative;
+     margin-right: 10px;
+}
+
+.entry-content blockquote:before {
+    content: "";
+    display: block;
+    height: 27px;
+    margin-bottom: -15px;
+    width: 40px;
+}
+
+.entry-content blockquote:after {
+    bottom: 11px;
+    content: "";
+    display: block;
+    height: 27px;
+    margin-bottom: -15px;
+    position: absolute;
+    right: 6px;
+    transform: rotate(180deg);
+    width: 40px;
+      -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+
+.category-encuentros .entry-content blockquote:before, .category-encuentros .entry-content blockquote:after {
+    background: url("images/post-q-encuentro.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.category-ideas .entry-content blockquote:before, .category-ideas .entry-content blockquote:after {
+    background: url("images/post-q-ideas.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.category-ena .entry-content blockquote:before, .category-ena .entry-content blockquote:after {
+    background: url("images/post-q-world.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+
+
+/* 
 
 .entry-excerpt {
     background: none repeat scroll 0 0 #FFFFFF;
@@ -740,18 +854,6 @@ body.custom-background {
     text-align: center;
     text-transform: uppercase;
     width: 580px;
-}
-
-.category-ena .entry-excerpt {
-    color: #9B9B44;
-}
-
-.category-ideas .entry-excerpt {
-    color: #8B6F38;
-}
-
-.category-encuentros .entry-excerpt {
-    color: #624283;
 }
 
 .entry-excerpt:before {
@@ -772,4 +874,9 @@ body.custom-background {
     position: relative;
     bottom: -20px;
     width: 580px;
+} */
+
+.single .post-navigation {
+    display: none;
 }
+

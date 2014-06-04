@@ -25,8 +25,12 @@
 
 <div class="col-13">
 
-	<?php if ( has_post_thumbnail() && !post_password_required() && empty( $single_featured_image )) : ?>
-		<div class="entry-thumbnail"><?php the_post_thumbnail(); ?></div>
-  <?php endif; ?>
-</div>
+	<div class="entry-featured">
+		<?php if ( has_post_thumbnail() && !post_password_required() && empty( $single_featured_image )) : ?>
+		<?php $featuredImage = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+			<div class="entry-thumbnail" style="background: url('<?php echo $featuredImage; ?>')"></div>
+		<?php endif; ?>
+		<div class="entry-social"><?php include('social-icons.php');?></div>
+	</div> 
+</div> 
 </article>

@@ -27,30 +27,59 @@ $options = get_option( 'theme_settings' ); ?>
 					</div>
 					<div id="news-ena" class="tbox">
 					</div>
-					<div class="news-item news-item-focus encuentro" style='background: url("http://graduados.uprrp.edu/inventio/vol3_2/img/regresar_escuela04.jpg");'>
+					
+					<?php
+	$args = array( 'numberposts' => '1', 'offset' => 0, );
+	$recent_posts = wp_get_recent_posts( $args );
+	
+	foreach( $recent_posts as $recent ){
+		$cat = get_the_category( $recent["ID"] );
+		echo '
+		<a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >
+				<div class="news-item news-item-focus ' . $cat[0]->category_nicename  . '" style="background: url(' . wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) ) . ');">
 						<div class="news-info">
-							<div class="news-fecha">10<br/>JUN</div>
+							<div class="news-fecha">' . get_the_time('j', $recent["ID"]) . ' <br/>' . get_the_time('M', $recent["ID"]) . ' </div>
 							<div class="news-h">
-								<a href="">Pre-encuentro de ENA  en Puerto</a>
+					' .   $recent["post_title"].'					
+
 							</div>
 						</div>
 					</div>
-					<div class="news-item ena" style='background: url("http://www.80grados.net/wp-content/uploads/2013/07/Justo-M%C3%A9ndez-Ar%C3%A1mburu1.jpg");'>
+				</a>
+				
+				
+				
+			';
+	}
+?>
+
+					<?php
+	$args = array( 'numberposts' => '2', 'offset' => 1, );
+	$recent_posts = wp_get_recent_posts( $args );
+	
+	foreach( $recent_posts as $recent ){
+		$cat = get_the_category( $recent["ID"] );
+		echo '
+		<a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >
+				<div class="news-item ' . $cat[0]->category_nicename  . '" style="background: url(' . wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) ) . ');">
 						<div class="news-info">
-							<div class="news-fecha">10<br/>JUN</div>
+							<div class="news-fecha">' . get_the_time('j', $recent["ID"]) . ' <br/>' . get_the_time('M', $recent["ID"]) . ' </div>
 							<div class="news-h">
-								<a href="">Pre-encuentro de ENA  en Puerto</a>
+					' .   $recent["post_title"].'					
+
 							</div>
 						</div>
-					</div>	
-					<div class="news-item ideas" style='background: url("http://3blmedia.com/media/images/Photo_6_-_Aflatoun_Students.JPG");'>
-						<div class="news-info">
-							<div class="news-fecha">10<br/>JUN</div>
-							<div class="news-h">
-								<a href="">Pre-encuentro de ENA  en Puerto</a>
-							</div>
-						</div>
-					</div>	
+					</div>
+				</a>
+				
+				
+				
+			';
+	}
+?>
+					
+					
+
 					<div id="news-members" class="tbox">
 					</div>	
 					<div class="news-memb-item">

@@ -330,7 +330,7 @@ body.custom-background {
     height: 50px;
     width: 50px;
 }
-.news-item.encuentro:before {
+.news-item.encuentros:before {
     background: url("images/encuentro-icon.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
@@ -354,11 +354,11 @@ body.custom-background {
     width: 280px;
 }
 
-.encuentro .news-info {
+.encuentros .news-info {
     background: none repeat scroll 0 0 rgba(161, 108, 216, 0.8);
 }
 
-.encuentro .news-info:hover {
+.encuentros .news-info:hover {
     background: none repeat scroll 0 0 rgba(161, 108, 216, 1.0);
 }
 
@@ -389,6 +389,7 @@ body.custom-background {
     padding-top: 7px;
     text-align: right;
     width: 50px;
+    text-transform: uppercase;
 }
 
 .news-item-focus .news-fecha {
@@ -402,14 +403,11 @@ body.custom-background {
     margin-top: 7px;
     padding-right: 8px;
     text-align: right;
-}
-
-.news-h a {
-    color: #FFFFFF !important;
+        color: #FFFFFF !important;
     text-decoration: none !important;
 }
 
-.ena .news-h a {
+.ena .news-h {
     color:  #000000 !important;
     text-decoration: none !important;
 }

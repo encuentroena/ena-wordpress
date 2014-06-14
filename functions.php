@@ -190,7 +190,6 @@ global $color_scheme;
 	</tr>
 
 
-
 	</table>
 
 	<p><input name="submit" id="submit" value="Guardar" type="submit"></p>
@@ -218,6 +217,7 @@ function options_validate( $input ) {
 
 
 <?php
+
 /**
  * Agregamos la columna derecha del home
  *
@@ -232,6 +232,23 @@ function arphabet_widgets_init() {
 		'before_title' => '<h2 class="rounded">',
 		'after_title' => '</h2>',
 	) );
+		register_sidebar( array(
+		'name' => 'Entrada - columna derecha',
+		'id' => 'entrada_columna_derecha',
+		'before_widget' => '<div id="entrada_columna_derecha">',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="rounded">',
+		'after_title' => '</h2>',
+	) );
+			register_sidebar( array(
+		'name' => 'Pagina - columna derecha',
+		'id' => 'pagina_columna_derecha',
+		'before_widget' => '<div id="pagina_columna_derecha">',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="rounded">',
+		'after_title' => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
 ?>
+

@@ -31,6 +31,7 @@
 			<div class="entry-thumbnail" style="background: url('<?php echo $featuredImage; ?>')"></div>
 		<?php endif; ?>
 		<div class="entry-social"><?php include('social-icons.php');?></div>
-	</div> 
+	</div>
+	<?php if ( dynamic_sidebar('entrada_columna_derecha') ) : else : endif; ?>
 </div> 
 </article>

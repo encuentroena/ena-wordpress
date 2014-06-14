@@ -765,6 +765,10 @@ body.custom-background {
     margin-top: -20px;
 }
 
+.entry-social {
+    background: url("images/post-ep.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
 .category-encuentros .entry-social {
     background: url("images/post-ep-encuentro.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
@@ -878,3 +882,9 @@ body.custom-background {
     display: none;
 }
 
+/* PAge */
+
+
+.page .entry-thumbnail {
+    height: 450px;
+}

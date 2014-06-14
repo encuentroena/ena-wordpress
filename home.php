@@ -79,7 +79,7 @@ $options = get_option( 'theme_settings' ); ?>
 ?>
 					
 					
-
+				<div style="display: none;">
 					<div id="news-members" class="tbox">
 					</div>	
 					<div class="news-memb-item">
@@ -122,6 +122,7 @@ $options = get_option( 'theme_settings' ); ?>
 						</div>
 					</div>	
 					<div class="news-memb-item">
+				</div>
 						<div class="news-memb-fecha">10<br/>JUN</div>
 						<div class="news-memb-info">
 							<div class="news-memb-f">

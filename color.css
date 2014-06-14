@@ -13,8 +13,54 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* Bakcground */
 
+.hgroup {
+    background-color: #EEEEEE;
+    background-image: url("images/logo.png");
+}
+
 #secondary:before {
-    background: url("images/fondo-izq.png") no-repeat scroll 0 0 #4C4C4C !important;
+    background: url("images/fondo-izq.png") no-repeat scroll 0 0;
+    background-color: #EEEEEE;
+}
+
+.page-ena .hgroup {
+    background-color: #FFFFB7;
+}
+
+.page-ena #secondary:before {
+    background-color: #FFFFB7;
+}
+
+.page-ideas .hgroup {
+    background-color: #F2DAAD;
+}
+
+.page-ideas #secondary:before {
+    background-color: #F2DAAD;
+}
+
+.page-miembros .hgroup {
+    background-color: #EAA3A3;
+}
+
+.page-miembros #secondary:before {
+    background-color: #EAA3A3;
+}
+
+.page-encuentros .hgroup {
+    background-color: #D0B6EB;
+}
+
+.page-encuentros #secondary:before {
+    background-color: #D0B6EB;
+}
+
+.page-contacto .hgroup {
+    background-color: #B2CCE5;
+}
+
+.page-contacto #secondary:before {
+    background-color: #B2CCE5;
 }
 
 /* Menu */

@@ -24,10 +24,10 @@ body.custom-background {
 /* Header */
 
 .hgroup {
-    background-image: url("images/logo.png");
     height: 220px;
     width: 280px;
 }
+
 
 .hgroup img {
     height: 177px;
@@ -682,6 +682,7 @@ body.custom-background {
 }
 
 
+
 .category-encuentros .entry-header .entry-title {
     background: none repeat scroll 0 0 #A26DD8;
 }
@@ -765,10 +766,6 @@ body.custom-background {
     margin-top: -20px;
 }
 
-.entry-social {
-    background: url("images/post-ep.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-
 .category-encuentros .entry-social {
     background: url("images/post-ep-encuentro.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
@@ -783,6 +780,7 @@ body.custom-background {
 
 .entry-thumbnail {
     background-size: cover !important;
+    background-position: center center !important;
     height: 245px;
     width: 280px;
 }
@@ -888,3 +886,24 @@ body.custom-background {
 .page .entry-thumbnail {
     height: 450px;
 }
+
+.entry-header .entry-title {
+    background: none repeat scroll 0 0 #4C4C4C;
+    color: white !important;
+}
+
+.entry-header .entry-title:after {
+    background: url("images/post-h-af.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.entry-header .entry-meta {
+	background: url('images/post-h-bf.png');
+}
+
+.page .entry-social {
+    background: url("images/post-ep.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+        height: 115px;
+    width: 280px;
+    margin-top: 0px;
+}
+

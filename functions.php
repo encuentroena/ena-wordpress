@@ -250,5 +250,19 @@ function arphabet_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
+
+
+function add_body_class( $classes )
+{
+
+    global $post;
+  $post_data = get_post($post->post_parent);
+    if ( isset( $post ) ) {
+        $classes[] = $post->post_type . '-' . $post_data->post_name;
+    }
+    return $classes;
+}
+add_filter( 'body_class', 'add_body_class' );
+
 ?>
 

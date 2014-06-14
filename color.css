@@ -49,6 +49,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .page-encuentros .hgroup {
     background-color: #D0B6EB;
+      background-image: url("images/logo-bn.png");
+
 }
 
 .page-encuentros #secondary:before {
@@ -62,6 +64,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .page-contacto #secondary:before {
     background-color: #B2CCE5;
 }
+
+
+
 
 /* Menu */
 

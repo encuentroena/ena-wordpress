@@ -8,6 +8,12 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<?php wp_head(); ?>
+	<?php $template = str_replace(".php", "", get_page_template_slug()); 
+	if (strpos($template,'encuentro') !== false) {
+		echo '<link rel="stylesheet" href="/wp-content/themes/ena-wordpress/'.$template.'.css" type="text/css" media="all" />';
+		};
+	?>
+	
 </head>
 
 <body <?php body_class(); ?>>

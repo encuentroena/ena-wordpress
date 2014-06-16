@@ -27,6 +27,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
     width: 150%;
 }
 
+.encuentro-contenido {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("images/borde.png");
+    background-origin: padding-box;
+    background-position: 950px 270px;
+    background-repeat: no-repeat;
+    height: 3900px;
+}
+
 /* Header */
 
 .encuentro-header {

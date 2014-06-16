@@ -25,6 +25,7 @@
 					<div class="encuentro-menu">
 						<div class="wrapper">
 							<ul>
+								<li><a href="#info">Info</a></li>
 								<?php
 									$mypages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'menu_order', 'sort_order' => 'ASC',) );
 
@@ -45,6 +46,7 @@
 					<div class="encuentro-contenido">
 						<div class="encuentro-principal">
 							<div class="wrapper">
+								<hr id="info" class="sections-id">
 								<div class="entry-content encuentro-content">
 									<?php the_content( __( 'Continue reading <span class="meta-nav">...</span>', 'flat' ) ); ?>
 								</div>
@@ -90,7 +92,8 @@
 									?>
 										<div class="encuentro-subpage <?php echo $vuelta ?>">
 											<div class="wrapper">
-												<h2 id="<?php echo $page->ID; ?>"><?php echo $page->post_title; ?></h2>
+												<hr id="<?php echo $page->ID; ?>" class="sections-id">
+												<h2><?php echo $page->post_title; ?></h2>
 												<div class="entry-content encuentro-content"><?php echo $content; ?></div>
 											</div>
 										</div>

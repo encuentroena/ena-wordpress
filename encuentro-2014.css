@@ -132,6 +132,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     margin-bottom: 77px;
     position: relative;
     width: 100%;
+    padding-top: 230px;
 }
 
 .encuentro-principal:after {
@@ -145,7 +146,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .encuentro-content {
-    margin-bottom: -45px;
+    margin-bottom: -25px;
 }
 
 /* Noticias */
@@ -230,6 +231,16 @@ margin-left: 20px;
     width: 100%;
 }
 
+.encuentro-subpage .wrapper .encuentro-content {
+    width: 880px;
+}
+
+.sections-id {
+    margin-top: -270px;
+    padding-bottom: 270px;
+    visibility: hidden;
+}
+
 /* Header Fijo */
 
 .encuentro-header{
@@ -241,6 +252,6 @@ z-index:3;
 position: fixed;
 width: 100%;
 z-index:3;
-top: 222px;
+top: 190px;
 }
 .encuentro-contenido

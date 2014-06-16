@@ -34,9 +34,13 @@ $options = get_option( 'theme_settings' ); ?>
 	
 	foreach( $recent_posts as $recent ){
 		$cat = get_the_category( $recent["ID"] );
+		$categorias="";
+		foreach( $cat as $cat2 ){
+			$categorias .= ' '.$cat2->category_nicename;
+			}		
 		echo '
 		<a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >
-				<div class="news-item news-item-focus ' . $cat[0]->category_nicename  . '" style="background: url(' . wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) ) . ');">
+				<div class="news-item news-item-focus ' . $categorias  . '" style="background: url(' . wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) ) . ');">
 						<div class="news-info">
 							<div class="news-fecha">' . get_the_time('j', $recent["ID"]) . ' <br/>' . get_the_time('M', $recent["ID"]) . ' </div>
 							<div class="news-h">
@@ -59,9 +63,13 @@ $options = get_option( 'theme_settings' ); ?>
 	
 	foreach( $recent_posts as $recent ){
 		$cat = get_the_category( $recent["ID"] );
+		$categorias="";
+		foreach( $cat as $cat2 ){
+		$categorias .= ' '.$cat2->category_nicename;
+		}	
 		echo '
 		<a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >
-				<div class="news-item ' . $cat[0]->category_nicename  . '" style="background: url(' . wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) ) . ');">
+				<div class="news-item ' . $categorias  . '" style="background: url(' . wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) ) . ');">
 						<div class="news-info">
 							<div class="news-fecha">' . get_the_time('j', $recent["ID"]) . ' <br/>' . get_the_time('M', $recent["ID"]) . ' </div>
 							<div class="news-h">

@@ -186,6 +186,17 @@ margin-left: 20px;
     margin-left: 20px;
 }
 
+
+.encuentro-subpage .wrapper > h2:before {
+    background: url("images/g-section-h.png") no-repeat scroll 0 0 / contain rgba(0, 0, 0, 0);
+    content: "";
+    float: left;
+    height: 39px;
+    margin-right: 8px;
+    margin-top: 4px;
+    width: 39px;
+}
+
 .encuentro-subpage {
     float: left;
 }

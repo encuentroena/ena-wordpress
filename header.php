@@ -13,7 +13,7 @@
 		echo '<link rel="stylesheet" href="/wp-content/themes/ena-wordpress/'.$template.'.css" type="text/css" media="all" />';
 		};
 	?>
-	
+
 </head>
 
 <body <?php body_class(); ?>>

@@ -11,5 +11,225 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-/* Bakcground */
+/* Fonts */
 
+@import url(http://fonts.googleapis.com/css?family=Exo);
+
+/* Wrapper */
+
+.wrapper {
+    width: 900px;
+}
+
+/* Background */
+#primary {
+    background: none repeat scroll 0 0 #FEF1CE !important;
+    width: 150%;
+}
+
+/* Header */
+
+.encuentro-header {
+    background: none repeat scroll 0 0 #F8F7F3;
+    height: 190px;
+}
+
+.encuentro-titulo {
+    float: left;
+    padding-right: 20px;
+    width: 740px;
+    margin-top: 50px;
+}
+
+.encuentro-logo {
+    float: left;
+    margin-top: 30px;
+    width: 160px;
+}
+
+.titulo-bf {
+    color: #980101;
+    float: right;
+    font-family: exo;
+    font-size: 21px;
+    text-align: right;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: bolder;
+}
+
+.titulo-af {
+    color: #336699;
+    float: right;
+    font-family: exo;
+    font-size: 18px;
+    text-align: right;
+    text-transform: uppercase;
+    width: 100%;
+    font-style: italic;
+}
+
+.encuentro-title {
+    color: #D70F00;
+    float: right;
+    font-family: exo;
+    font-size: 59px;
+    font-weight: bold;
+    line-height: 55px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: right;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+/* Menu */
+.encuentro-menu {
+    background: url("images/g-bar.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 61px;
+    padding-top: 7px;
+}
+
+.page-encuentros .col-lg-9 {
+    width: 100%;
+}
+
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+*:before, *:after {
+    box-sizing: border-box;
+}
+.encuentro-menu li {
+    background: url("images/g-arrow.png") no-repeat scroll 0 17px rgba(0, 0, 0, 0);
+    float: left;
+    height: 31px;
+    margin-right: 17px;
+    padding-left: 21px;
+}
+
+.encuentro-menu ul {
+    color: #FFFFFF !important;
+    float: left;
+    font-family: Exo;
+    font-size: 24px;
+    font-weight: bolder;
+    height: 31px;
+    list-style: none;
+    text-transform: lowercase;
+}
+
+.encuentro-menu a {
+    color: #FFFFFF !important;
+}
+
+
+/* Principal */
+.encuentro-principal {
+    background: url("images/g-back.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    margin-bottom: 77px;
+    position: relative;
+    width: 100%;
+}
+
+.encuentro-principal:after {
+    background: url("images/g-section-af.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: -77px;
+    content: "";
+    height: 77px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.encuentro-content {
+    margin-bottom: -45px;
+}
+
+/* Noticias */
+
+.encuentro-news > h2 {
+    color: #336699;
+    font-family: exo;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+
+.encuentro-news {
+width: 280px;
+float: left;
+margin-left: 20px;
+}
+
+
+.encuentro-news > h2:before {
+    background: url("images/g-li.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    float: left;
+    height: 26px;
+    margin-left: 20px;
+    margin-right: 10px;
+    position: relative;
+    width: 31px;
+}
+
+/* Subpages */
+
+.encuentro-subpage .wrapper > h2 {
+    font-family: exo;
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.encuentro-subpage {
+    float: left;
+}
+
+.encuentro-subpage.impar {
+    background: url("images/g-back.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    margin-bottom: 77px;
+    margin-top: 77px;
+    position: relative;
+    width: 100%;
+}
+
+.encuentro-subpage.impar:after {
+    background: url("images/g-section-af.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: -77px;
+    content: "";
+    height: 77px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.encuentro-subpage.impar:before {
+    background: url("images/g-section-bf.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    top: -77px;
+    content: "";
+    height: 77px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+/* Header Fijo */
+
+.encuentro-header{
+position: fixed;
+width: 100%;
+z-index:3;
+}
+.encuentro-menu{
+position: fixed;
+width: 100%;
+z-index:3;
+top: 222px;
+}
+.encuentro-contenido

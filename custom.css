@@ -656,6 +656,7 @@ body.custom-background {
     position: relative;
     text-align: left;
     width: 450px;
+    text-transform: uppercase;
 }
 
 .entry-header .entry-title:after {

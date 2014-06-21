@@ -757,6 +757,7 @@ body.custom-background {
 }
 
 .entry-featured {
+    margin-bottom: 30px;
     margin-left: 20px;
     margin-top: 75px;
 }
@@ -908,3 +909,31 @@ body.custom-background {
     margin-top: 0px;
 }
 
+/* Archivo */
+
+.archive-post-title {
+    height: 50px;
+}
+.ena.archive-post-title {
+    background: none repeat scroll 0 0 #FFFF70;
+}
+
+.encuentros.archive-post-title {
+    background: none repeat scroll 0 0 rgba(161, 108, 216, 1.0);
+}
+
+.ideas.archive-post-title {
+    background: none repeat scroll 0 0 rgba(229, 182, 92, 1.0);
+}
+
+.archive-post-title > h2 {
+    color: #FFFFFF;
+    font-family: medula one;
+    font-size: 35px;
+    margin: 7px 0;
+    text-shadow: 0 0 17px #000000;
+}
+
+.archivo-listados .news-item:before {
+    background: none !important;
+}

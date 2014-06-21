@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+ <?php get_header(); ?>
 			<h1 class="page-title">
 				<?php
 				if ( is_category() ) :

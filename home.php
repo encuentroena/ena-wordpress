@@ -25,9 +25,10 @@ $options = get_option( 'theme_settings' ); ?>
 					<div id="videobox">
 						<iframe class="iframe" src="<?php echo $options['portada:video'];?>" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
-					<div id="news-ena" class="tbox">
-					</div>
-					
+					<a href="/archivo" >
+						<div id="news-ena" class="tbox">
+						</div>
+					</a>
 					<?php
 	$args = array( 'numberposts' => '1', 'offset' => 0, );
 	$recent_posts = wp_get_recent_posts( $args );

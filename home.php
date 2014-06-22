@@ -146,6 +146,32 @@ $options = get_option( 'theme_settings' ); ?>
 					</div>	
 				</div>
 				<div class="col-13">
+					<a href="/encuentros/guatemala-2014/" class="banner-portada" id="banner02">
+<div class="counter"> 
+<?php
+$fecha = $options['portada:fecha'];
+$dt_end = new DateTime($fecha);
+$remain = $dt_end->diff(new DateTime());
+$anos = $remain->y;
+$meses = $remain->m;
+$dias = $remain->d;
+if ($dt_end>new DateTime())
+	{
+print("Faltan ");
+if ($anos>'1') echo $remain->y . ' años, ';
+if ($anos=='1') echo $remain->y . ' año, ';
+if ($meses>'1') echo $remain->m . ' meses y ';
+if ($meses=='1') echo $remain->m . ' mes y ';
+if ($dias>'1') echo $remain->d . ' días ';
+if ($dias=='1') echo $remain->d . ' día ';
+if ($dias=='0') echo $remain->d . ' días ';
+print("para el próximo encuentro.");
+} else {
+print("Ya comenzó.");
+}
+?>
+</div>
+</a>
 					<?php if ( dynamic_sidebar('portada_columna_derecha') ) : else : endif; ?>
 				</div>
 

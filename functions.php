@@ -189,6 +189,11 @@ global $color_scheme;
 	<label for="theme_settings[portada:video]"><?php _e( 'Video de YouTube' ); ?></label></td>
 	</tr>
 
+	<tr valign="top">
+	<th scope="row"><?php _e( 'Fecha del próximo encuentro' ); ?></th>
+	<td><input id="theme_settings[portada:fecha]" type="datetime" name="theme_settings[portada:fecha]" value="<?php esc_attr_e( $options['portada:fecha'] ); ?>" />
+	<label for="theme_settings[portada:fecha]"><?php _e( 'Ej: 2011-01-13' ); ?></label></td>
+	</tr>
 
 	</table>
 

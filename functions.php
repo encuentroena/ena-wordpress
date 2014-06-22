@@ -270,4 +270,3 @@ function add_body_class( $classes )
 add_filter( 'body_class', 'add_body_class' );
 
 ?>
-

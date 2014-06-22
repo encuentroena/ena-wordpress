@@ -882,7 +882,7 @@ body.custom-background {
     display: none;
 }
 
-/* PAge */
+/* Page */
 
 
 .page .entry-thumbnail {
@@ -936,4 +936,116 @@ body.custom-background {
 
 .archivo-listados .news-item:before {
     background: none !important;
+}
+
+
+
+
+/* Member Post */
+
+.miembros .entry-content {
+    min-height: 56em;
+}
+
+.miembros .hentry .entry-title {
+    height: 95px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    padding-left: 20px;
+    width: 500px;
+}
+
+.miembros .entry-header .entry-title:before {
+    content: "";
+    height: 115px;
+    left: -20px;
+    position: absolute;
+    top: 0;
+    width: 20px;
+}
+
+.miembros .entry-header .entry-title {
+    background: none repeat scroll 0 0 #ac3939;
+}
+
+.miembros .entry-header .entry-title:after {
+    background: url("images/post-h-af-members.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.miembros .entry-header .entry-title:before {
+	background: url('images/post-h-bf-members.png');
+}
+
+.miembros .entry-social {
+    background: url("images/post-ep-members.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.miembros .entry-meta {
+    background: none repeat scroll 0 0 #692323;
+    margin-left: 20px;
+    width: 500px;
+    height: 20px;
+    padding-top: 0;
+        color: #EEEEEE;
+    font-family: open sans;
+    font-size: 9px;
+    padding-left: 20px;
+    text-transform: none;
+}
+
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+*:before, *:after {
+    box-sizing: border-box;
+}
+.logo.web {
+    background: url("images/icon-web.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.logo {
+    color: #EEEEEE;
+    float: left;
+    font-family: open sans;
+    font-size: 10px;
+    font-weight: bold;
+    height: 16px;
+    margin-top: 2px;
+    padding-left: 19px;
+    padding-right: 10px;
+}
+
+.logo:hover{
+    color: #EEEEEE;
+}
+
+.logo.web {
+    background:  url("images/icon-web.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.logo.mail {
+    background:  url("images/icon-email.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.logo.facebook {
+    background:  url("images/icon-face.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.logo.twitter {
+    background:  url("images/icon-twit.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.miembros .foto {
+    background-size: cover !important;
+    height: 240px;
+    width: 580px;
+}
+
+.miembros .epigrafe {
+    background: url("images/foto-af-members.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #EEEEEE;
+    font-family: open sans;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    padding-left: 35px;
 }

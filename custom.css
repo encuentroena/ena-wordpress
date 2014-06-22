@@ -445,6 +445,7 @@ body.custom-background {
     padding-right: 8px;
     padding-top: 7px;
     text-align: right;
+    text-transform: uppercase;
 }
 
 .news-memb-info {
@@ -465,7 +466,7 @@ body.custom-background {
     font-weight: bold;
     line-height: 14px;
     margin-top: 10px;
-    width: 180px;
+    width: 222px;
 }
 
 .news-memb-info a {
@@ -1048,4 +1049,41 @@ body.custom-background {
     font-weight: bold;
     height: 20px;
     padding-left: 35px;
+}
+
+
+.miembros #news-members:after {
+    background: url("images/rss-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.miembros #news-members {
+    background-color: #666666;
+    background-image: none;
+}
+
+.miembros .tbox {
+    color: #EEEEEE;
+    font-family: medula one;
+    font-size: 35px;
+    padding-left: 10px;
+    text-shadow: 0 0 17px #000000;
+    width: 280px;
+    margin-bottom: 10px;
+}
+
+.miembros .news-memb-item, .miembros .news-memb-fecha {
+height: 60px;
+}
+
+.miembros .news-memb-h {
+margin-top: 0px;
+}
+
+.logo-member {
+    background-size: cover !important;
+    box-shadow: 0 0 7px #000000;
+    float: right;
+    height: 160px;
+    margin-left: 10px;
+    width: 160px;
 }

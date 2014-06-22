@@ -40,11 +40,24 @@ if(get_field('twitter'))
 	</header>
 <?php $single_featured_image = flat_get_theme_option('single_featured_image'); ?>
 	<div class="entry-content">
+							<?php
+if(get_field('logo'))
+{
+	echo '<div class="logo-member" style="background: url(' . get_field('logo') . ') no-repeat"></div>';
+}
+?>
 		<?php the_content( __( 'Continue reading', 'flat' ) ); ?>
-		<div class="foto-box">
-			<div class="foto" style="background: url(<?php the_field('foto'); ?>) no-repeat"></div>
-			<div class="epigrafe"><?php the_field('epigrafe'); ?></div>
-		</div>
+		
+					<?php
+if(get_field('foto'))
+{
+	echo '<div class="foto-box">
+			<div class="foto" style="background: url(' . get_field('foto') . ') no-repeat"></div>
+			<div class="epigrafe">' . get_field('epigrafe') . '</div>
+		</div>';
+}
+?>
+		
 		<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'flat' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 	</div>
 
@@ -57,7 +70,43 @@ if(get_field('twitter'))
 		<?php endif; ?>
 		<div class="entry-social"><?php include('social-icons.php');?></div>
 	</div>
-	<?php if ( dynamic_sidebar('entrada_columna_derecha') ) : else : endif; ?>
+	
+
+
+				
+					<?php   
+					if(get_field('feed')) {
+							include_once(ABSPATH . WPINC . '/rss.php');
+						    $feed = get_field('feed');
+						    $rss = fetch_feed($feed);
+						    if (!is_wp_error( $rss ) ) :
+						    $maxitems = $rss->get_item_quantity(3);
+						    $rss_items = $rss->get_items(0, $maxitems);
+						    if ($rss_items):
+						    echo '<div class="news-member">	
+					<div id="news-members" class="tbox"> Sus últimas noticias
+					</div>';
+						    foreach ( $rss_items as $item ) :
+						    //instead of a bunch of string concatenation or echoes, I prefer the terseness of printf
+						    //(http://php.net/manual/en/function.printf.php)
+						    printf('<a href="%s" target="a_blank">
+						    						    <div class="news-memb-item">
+							<div class="news-memb-fecha">%s<br/>%s</div>
+							<div class="news-memb-info">
+								<div class="news-memb-h">
+									%s
+								</div>
+							</div>
+						</div>
+						   </a>',$item->get_permalink(),$item->get_date('j'),$item->get_date('M'),$item->get_title() );
+						    endforeach;
+							echo '</div>';
+						    endif;
+						    endif;
+						    }
+						    ?>
+
+						
 </div> 
 				<?php flat_post_nav(); ?>
 

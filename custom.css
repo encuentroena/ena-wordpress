@@ -1087,3 +1087,34 @@ margin-top: 0px;
     margin-left: 10px;
     width: 160px;
 }
+
+.miembros .storelocator-panel {
+    display: none;
+}
+
+.miembros #wpmm-container #map-canvas {
+    height: 245px;
+    width: 280px;
+}
+
+.miembros #wpmm-container #panel {
+    height: 245px;
+}
+
+.miembros .entry-social {
+    background: url("images/post-ep-members.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #EEEEEE;
+    font-family: open sans;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 17px;
+    padding: 14px 30px 14px 25px;
+    position: absolute;
+}
+.miembros .entry-featured {
+    margin-bottom: 70px;
+}
+
+.miembros .gmnoprint {
+    display: none;
+}

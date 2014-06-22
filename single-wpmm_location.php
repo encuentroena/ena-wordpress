@@ -64,11 +64,10 @@ if(get_field('foto'))
 </div>
 <div class="col-13">
 	<div class="entry-featured">
-		<?php if ( has_post_thumbnail() && !post_password_required() && empty( $single_featured_image )) : ?>
-		<?php $featuredImage = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-			<div class="entry-thumbnail" style="background: url('<?php echo $featuredImage; ?>')"></div>
-		<?php endif; ?>
-		<div class="entry-social"><?php include('social-icons.php');?></div>
+		<div class="entry-thumbnail">
+		<?php echo do_shortcode ('[wpmm_map_single map="8"]'); ?>
+			</div>
+		<div class="entry-social"><?php the_field('_wpmm_mbe_address');?></div>
 	</div>
 	
 

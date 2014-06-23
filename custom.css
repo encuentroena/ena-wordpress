@@ -761,6 +761,10 @@ body.custom-background {
     text-transform: uppercase;
 }
 
+.page .entry-featured {
+    display: none;
+}
+
 .entry-featured {
     margin-bottom: 30px;
     margin-left: 20px;
@@ -915,6 +919,12 @@ body.custom-background {
 }
 
 /* Archivo */
+
+.archive .entry-featured {
+    display: block !important;
+    visibility: hidden;
+}
+
 
 .archive-post-title {
     height: 50px;
@@ -1204,10 +1214,11 @@ visibility: hidden;
 }
 
 #barra-social {
-    float: right;
-    margin-right: 30px;
+    float: left;
+    margin-left: 40px;
     margin-top: 20px;
 }
+
 .logo-social {
     float: left;
     height: 32px;
@@ -1247,6 +1258,10 @@ visibility: hidden;
 
 #feed:hover {
     background: url("images/logo-rss-on.png") no-repeat scroll 0 0;
+}
+
+.logo-social {
+    background-color: #4E4E4E !important;
 }
 
 .category-ideas .logo-social {

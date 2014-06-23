@@ -37,12 +37,6 @@ jQuery(function() {
 				<?php comments_template(); ?>
 </div>
 
-				<div class="col-13">
-						<div class="entry-featured">
-		<div class="entry-social"><?php include('social-icons.php');?></div>
-	</div>
-					<?php if ( dynamic_sidebar('pagina_columna_derecha') ) : else : endif; ?>
-				</div>
 				
 				
 			<?php endwhile; ?>

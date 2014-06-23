@@ -21,6 +21,7 @@ body.custom-background {
     background: url("images/bg.jpg") no-repeat fixed 100% 0 rgba(0, 0, 0, 0) !important;
 }
  
+ 
 /* Header */
 
 .hgroup {
@@ -626,6 +627,9 @@ body.custom-background {
      bottom: 0;
 }
 
+.entry-content {
+    min-height: 50em;
+}
 /* Post */
 
 .hentry {
@@ -1136,6 +1140,10 @@ visibility: hidden;
 }
 
 /* Mapa */
+
+.page-template-page-full-php #footer-image {
+    background: url("/wp-content/themes/ena-wordpress/images/footer00.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+}
 .fullwidth .entry-content {
     padding-top: 0 !important;
     width: 880px;

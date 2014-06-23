@@ -1,4 +1,5 @@
 				<?php if ( apply_filters( 'show_flat_credits', true ) ) { ?>
+					<div class="espacio"></div>
 					<div class="site-info">
 						<div id="footer-image" style='background: url("/wp-content/themes/ena-wordpress/images/footer02.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);'></div>
 						<?php do_action( 'flat_credits' ); ?>

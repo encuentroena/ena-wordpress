@@ -630,6 +630,10 @@ body.custom-background {
 .entry-content {
     min-height: 50em;
 }
+
+#footer-licence {
+    width: 900px;
+}
 /* Post */
 
 .hentry {
@@ -1286,4 +1290,14 @@ visibility: hidden;
 
 .category-ena .compartir {
     color: #000000;
+}
+
+ /* Tablas */
+ 
+ table {
+    border: 3px solid #000000;
+}
+
+td {
+    border: 2px solid #808080 !important;
 }

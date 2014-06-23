@@ -91,58 +91,7 @@ $options = get_option( 'theme_settings' ); ?>
 					<div style="display:;">
 						<div id="news-members" class="tbox">
 						</div>	
-						<div class="news-memb-item">
-							<div class="news-memb-fecha">10<br/>JUN</div>
-							<div class="news-memb-info">
-								<div class="news-memb-f">
-								</div>
-								<div class="news-memb-s">
-									<a href="">COlegio del Sol</a>
-								</div>
-								<div class="news-memb-h">
-									<a href="">Pre-encuentro de ENA  en Puerto</a>
-								</div>
-							</div>
-						</div>
-						<div class="news-memb-item">
-							<div class="news-memb-fecha">10<br/>JUN</div>
-							<div class="news-memb-info">
-								<div class="news-memb-f">
-								</div>
-								<div class="news-memb-s">
-									<a href="">Reevo</a>
-								</div>
-								<div class="news-memb-h">
-									<a href="">La transformación educativa en marcha</a>
-								</div>
-							</div>
-						</div>	
-						<div class="news-memb-item">
-							<div class="news-memb-fecha">10<br/>JUN</div>
-							<div class="news-memb-info">
-								<div class="news-memb-f">
-								</div>
-								<div class="news-memb-s">
-									<a href="">Reevo</a>
-								</div>
-								<div class="news-memb-h">
-									<a href="">Pedagogía del Acontecimiento</a>
-								</div>
-							</div>
-						</div>	
-						<div class="news-memb-item">
-							<div class="news-memb-fecha">10<br/>JUN</div>
-							<div class="news-memb-info">
-								<div class="news-memb-f">
-								</div>
-								<div class="news-memb-s">
-									<a href="">Nuestra Escuela PR</a>
-								</div>
-								<div class="news-memb-h">
-									<a href="">Nuevo espacio para Eloisa</a>
-								</div>
-							</div>
-						</div>	
+						<?php include('miembros_feeds.php');?>
 					</div>
 				</div>
 				<div class="col-13">

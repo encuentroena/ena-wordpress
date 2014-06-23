@@ -1118,3 +1118,73 @@ margin-top: 0px;
 .miembros .gmnoprint {
     display: none;
 }
+
+.action {
+visibility: hidden;
+}
+
+.store-title a {
+    color: #692323 !important;
+}
+
+.store-title {
+    font-size: 17px;
+}
+
+.store-address {
+    padding: 0 25px;
+}
+
+/* Mapa */
+.fullwidth .entry-content {
+    padding-top: 0 !important;
+    width: 880px;
+}
+
+.fullwidth .storelocator-panel {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: right !important;
+}
+
+.location-search {
+    display: none;
+}
+
+.fullwidth #map-canvas {
+    background: url("images/videobox-izq.png") no-repeat scroll 0 0 #CCCCCF !important;
+    float: left;
+    margin-bottom: 20px;
+    width: 580px;
+    margin-right: 20px;
+
+}
+
+.fullwidth #map-canvas:after {
+    background: url("images/videobox-dw.png") no-repeat scroll 0 0 #CCCCCF;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 580px;
+}
+
+.fullwidth .gm-style {
+    height: 330px !important;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 560px !important;
+}
+
+.fullwidth .storelocator-panel .store-list li.highlighted, .storelocator-panel .store-list li.highlighted:hover {
+    background: none repeat scroll 0 0 #EAA3A3 !important;
+}
+
+.fullwidth .storelocator-panel .store-list li.highlighted, .storelocator-panel .store-list li.highlighted:hover {
+    background: none repeat scroll 0 0 #EAA3A3 !important;
+}
+
+.fullwidth .storelocator-panel {
+    border: medium none;
+    overflow: auto;
+}

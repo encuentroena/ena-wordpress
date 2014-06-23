@@ -52,5 +52,10 @@
 				<div class="sidebar-offcanvas">
 					<?php get_sidebar(); ?>
 				</div>
+				<div id="barra-social">
+<a href="https://www.facebook.com/encuentrode.nuestraamerica"><div class="logo-social" id="facebook"></div></a>
+<a href="https://twitter.com/encuentroena"><div class="logo-social" id="twitter"></div></a>
+<a href="http://www.encuentrodenuestraamerica.org/feed/"><div class="logo-social" id="feed"></div></a>
+</div>
 			</div>
 			<div id="primary" class="content-area col-lg-9">

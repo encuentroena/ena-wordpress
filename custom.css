@@ -1188,3 +1188,38 @@ visibility: hidden;
     border: medium none;
     overflow: auto;
 }
+
+/* Social Icons */
+
+#secondary .widget {
+    border-bottom: 0 solid rgba(255, 255, 255, 0.1);
+}
+
+#barra-social {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.logo-social {
+    float: left;
+    height: 50px;
+    margin-left: 10px;
+    width: 50px;
+}
+
+#facebook {
+    background: url("images/logo-facebook.png") no-repeat scroll 0 0;
+}
+
+
+#youtube {
+    background: url("images/logo-youtube.png") no-repeat scroll 0 0;
+}
+
+#twitter {
+    background: url("images/logo-twitter.png") no-repeat scroll 0 0;
+}
+
+#feed {
+    background: url("images/logo-rss.png") no-repeat scroll 0 0;
+}

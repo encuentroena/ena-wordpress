@@ -271,40 +271,5 @@ add_filter( 'body_class', 'add_body_class' );
 
 
 
-function miembros_taxonomy() {  
-    register_taxonomy(  
-        'miembros',  //The name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces). 
-        'noticias-miembros',        //post type name
-        array(  
-            'hierarchical' => true,  
-            'label' => 'Miembros',  //Display name
-            'query_var' => true,
-            'rewrite' => array(
-                'slug' => 'miembros', // This controls the base slug that will display before each term
-                'with_front' => false // Don't display the category base before 
-            )
-        )  
-    );  
-}  
-add_action( 'init', 'miembros_taxonomy');
-
-
-add_action( 'init', 'create_post_type' );
-function create_post_type() {
-	register_post_type( 'noticias-miembros',
-		array(
-			'labels' => array(
-				'name' => __( 'Noticias de Miembros' ),
-				'singular_name' => __( 'Noticia de Miembro' )
-			),
-		'menu_icon' => 'dashicons-portfolio',
-		'public' => true,
-		'has_archive' => true,
-		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments'),
-		'taxonomies' => array( 'miembros'),
-		)
-	);
-}
-
 
 ?>

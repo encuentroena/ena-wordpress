@@ -189,6 +189,9 @@ margin-left: 20px;
     width: 31px;
 }
 
+.encuentro-news .news-item-focus .news-info {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+}
 /* Subpages */
 
 .encuentro-subpage .wrapper > h2 {
@@ -265,4 +268,27 @@ width: 100%;
 z-index:3;
 top: 190px;
 }
-.encuentro-contenido
+
+/* Tablas */
+.t-1 {
+    border: 0 none !important;
+    color: #000000;
+    font-family: exo;
+    font-weight: bold;
+    text-align: right;
+    text-transform: uppercase;
+     padding: 0 !important;
+}
+
+.t-2 {
+    border: 0 none !important;
+    color: #D70F00;
+    font-family: exo;
+    font-weight: bold;
+    text-transform: uppercase;
+     padding: 0 !important;
+}
+
+.t-0 {
+    border: 0 none !important;
+}

@@ -1,6 +1,6 @@
     <?php
     /*
-    Template Name: Encuentro-2014
+    Template Name: Encuentro-2012
     */
     ?>
     
@@ -53,7 +53,7 @@
 								<div class="encuentro-news">
 									<h2>Últimas Noticias</h2>
 									<?php
-										$args = array( 'numberposts' => '3', 'offset' => 0, 'category' => 7,);
+										$args = array( 'numberposts' => '3', 'offset' => 0, 'category' => 15,);
 										$recent_posts = wp_get_recent_posts( $args );
 										
 										foreach( $recent_posts as $recent ){

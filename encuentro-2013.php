@@ -51,7 +51,7 @@
 									<?php the_content( __( 'Continue reading <span class="meta-nav">...</span>', 'flat' ) ); ?>
 								</div>
 								<div class="encuentro-news">
-									<h2>Ultimás Noticias</h2>
+									<h2>Últimas Noticias</h2>
 									<?php
 										$args = array( 'numberposts' => '3', 'offset' => 0, 'category' => 14,);
 										$recent_posts = wp_get_recent_posts( $args );

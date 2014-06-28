@@ -840,7 +840,7 @@ body.custom-background {
 }
 
 .entry-content blockquote:before, .entry-content blockquote:after {
-    background: url("images/post-q-encuentro.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("images/post-q.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 .category-encuentros .entry-content blockquote:before, .category-encuentros .entry-content blockquote:after {

@@ -1304,3 +1304,11 @@ visibility: hidden;
 td {
     border: 2px solid #808080 !important;
 }
+
+
+
+
+
+.banner-portada {
+display: none;
+}

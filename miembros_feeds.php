@@ -43,7 +43,7 @@ $feed = new SimplePie(); // Create a new instance of SimplePie
 // Load the feeds
 $feed->set_feed_url($feeds);
 $feed->set_cache_duration (10000); // Set the cache time
-$feed->set_cache_location ('./location'); // Set the cache location
+$feed->set_cache_location ('./cache'); // Set the cache location
 $feed->enable_xml_dump(isset($_GET['xmldump']) ? true : false);
 $success = $feed->init(); // Initialize SimplePie
 $feed->handle_content_type(); // Take care of the character encoding

@@ -1176,7 +1176,7 @@ visibility: hidden;
 }
 
 .fullwidth #map-canvas {
-    background: url("images/videobox-izq.png") no-repeat scroll 0 0 #CCCCCF !important;
+    background: url("images/videobox-izq.png") no-repeat scroll 0 0  !important;
     float: left;
     margin-bottom: 20px;
     width: 580px;
@@ -1185,7 +1185,7 @@ visibility: hidden;
 }
 
 .fullwidth #map-canvas:after {
-    background: url("images/videobox-dw.png") no-repeat scroll 0 0 #CCCCCF;
+    background: url("images/videobox-dw.png") no-repeat scroll 0 0 ;
     bottom: 0;
     content: "";
     display: block;
@@ -1195,10 +1195,10 @@ visibility: hidden;
 }
 
 .fullwidth .gm-style {
-    height: 330px !important;
+/*     height: 330px !important; */
     margin-left: 10px;
     margin-top: 10px;
-    width: 560px !important;
+/*     width: 560px !important; */
 }
 
 .fullwidth .storelocator-panel .store-list li.highlighted, .storelocator-panel .store-list li.highlighted:hover {

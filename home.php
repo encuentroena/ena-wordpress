@@ -95,7 +95,7 @@ $options = get_option( 'theme_settings' ); ?>
 					</div>
 				</div>
 				<div class="col-13">
-					<a href="/encuentros/guatemala-2014/" class="banner-portada" id="banner02">
+					<a href="/encuentros/salvador-2015/" class="banner-portada" id="banner02">
 <div class="counter"> 
 <?php
 $fecha = $options['portada:fecha'];

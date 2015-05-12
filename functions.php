@@ -171,31 +171,47 @@ global $color_scheme;
 
 	<table>
 
-	<tr valign="top">
-	<th scope="row"><?php _e( 'Titulo de la caja de la portada' ); ?></th>
-	<td><input id="theme_settings[portada:titulo]" type="text" size="36" name="theme_settings[portada:titulo]" value="<?php esc_attr_e( $options['portada:titulo'] ); ?>" />
-	<label for="theme_settings[portada:titulo]"><?php _e( '' ); ?></label></td>
-	</tr>
+		<tr valign="top">
+		<th scope="row"><?php _e( 'Titulo de la caja de la portada' ); ?></th>
+		<td><input id="theme_settings[portada:titulo]" type="text" size="36" name="theme_settings[portada:titulo]" value="<?php esc_attr_e( $options['portada:titulo'] ); ?>" />
+		<label for="theme_settings[portada:titulo]"><?php _e( '' ); ?></label></td>
+		</tr>
 
-	<tr valign="top">
-	<th scope="row"><?php _e( 'Bajada de la caja de la portada' ); ?></th>
-	<td><input id="theme_settings[portada:bajada]" type="text" size="90" name="theme_settings[portada:bajada]" value="<?php esc_attr_e( $options['portada:bajada'] ); ?>" />
-	<label for="theme_settings[portada:bajada]"><?php _e( 'Una descripción que va debajo del titulo' ); ?></label></td>
-	</tr>
+		<tr valign="top">
+		<th scope="row"><?php _e( 'Bajada de la caja de la portada' ); ?></th>
+		<td><input id="theme_settings[portada:bajada]" type="text" size="90" name="theme_settings[portada:bajada]" value="<?php esc_attr_e( $options['portada:bajada'] ); ?>" />
+		<label for="theme_settings[portada:bajada]"><?php _e( 'Una descripción que va debajo del titulo' ); ?></label></td>
+		</tr>
 
-	<tr valign="top">
-	<th scope="row"><?php _e( 'URL del video de la portada' ); ?></th>
-	<td><input id="theme_settings[portada:video]" type="text" size="36" name="theme_settings[portada:video]" value="<?php esc_attr_e( $options['portada:video'] ); ?>" />
-	<label for="theme_settings[portada:video]"><?php _e( 'Video de YouTube' ); ?></label></td>
-	</tr>
+		<tr valign="top">
+		<th scope="row"><?php _e( 'URL del video de la portada' ); ?></th>
+		<td><input id="theme_settings[portada:video]" type="text" size="36" name="theme_settings[portada:video]" value="<?php esc_attr_e( $options['portada:video'] ); ?>" />
+		<label for="theme_settings[portada:video]"><?php _e( 'Video de YouTube' ); ?></label></td>
+		</tr>
 
-	<tr valign="top">
-	<th scope="row"><?php _e( 'Fecha del próximo encuentro' ); ?></th>
-	<td><input id="theme_settings[portada:fecha]" type="datetime" name="theme_settings[portada:fecha]" value="<?php esc_attr_e( $options['portada:fecha'] ); ?>" />
-	<label for="theme_settings[portada:fecha]"><?php _e( 'Ej: 2011-01-13' ); ?></label></td>
-	</tr>
-
+		<tr valign="top">
+		<th scope="row"><?php _e( 'Fecha del próximo encuentro' ); ?></th>
+		<td><input id="theme_settings[portada:fecha]" type="datetime" name="theme_settings[portada:fecha]" value="<?php esc_attr_e( $options['portada:fecha'] ); ?>" />
+		<label for="theme_settings[portada:fecha]"><?php _e( 'Ej: 2011-01-13' ); ?></label></td>
+		</tr>
 	</table>
+
+	<h2>Conexion con ELGG</h2>
+	<table>
+		<tr valign="top">
+		<th scope="row"><?php _e( 'Ruta absoluta a la instalación de ELGG' ); ?></th>
+		<td><input id="theme_settings[elgg:path]" type="text" name="theme_settings[elgg:path]" value="<?php esc_attr_e( $options['elgg:path'] ); ?>" />
+		<label for="theme_settings[elgg:path]"><?php _e( '/srv/reevo-web/www/red/' ); ?></label></td>
+		</tr>
+
+		<tr valign="top">
+		<th scope="row"><?php _e( 'Nombre del grupo en ELGG' ); ?></th>
+		<td><input id="theme_settings[elgg:group]" type="text" name="theme_settings[elgg:group]" value="<?php esc_attr_e( $options['elgg:group'] ); ?>" />
+		<label for="theme_settings[elgg:group]"><?php _e( 'nodocordoba' ); ?></label></td>
+		</tr>
+	</table>
+
+	
 
 	<p><input name="submit" id="submit" value="Guardar" type="submit"></p>
 	</form>

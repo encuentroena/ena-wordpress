@@ -246,6 +246,16 @@ global $color_scheme;
 		<td><input id="theme_settings[portada:vernoticias]" type="checkbox" name="theme_settings[portada:vernoticias]" value="display: none;" <?php checked( $options['portada:vernoticias']); ?> />
 		<label for="theme_settings[portada:vernoticias]"><?php _e( 'Haga click si desea ocultar el recuadro de noticias de miembros' ); ?></label></td>
 		</tr>
+		
+				<th scope="row"><?php _e( 'FanPage de Facebook' ); ?></th>
+		<td><input id="theme_settings[portada:facebook]" type="text" size="36" name="theme_settings[portada:facebook]" value="<?php esc_attr_e( $options['portada:facebook'] ); ?>" />
+		<label for="theme_settings[portada:facebook]"><?php _e( '' ); ?></label></td>
+		</tr>
+		
+				<th scope="row"><?php _e( 'Usuario de Twitter' ); ?></th>
+		<td><input id="theme_settings[portada:twitter]" type="text" size="36" name="theme_settings[portada:twitter]" value="<?php esc_attr_e( $options['portada:twitter'] ); ?>" />
+		<label for="theme_settings[portada:twitter]"><?php _e( '' ); ?></label></td>
+		</tr>
 	</table>
 
 	<h2>Conexion con ELGG</h2>

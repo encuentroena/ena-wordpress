@@ -96,8 +96,8 @@ $options = get_option( 'theme_settings' ); ?>
 					</div>
 				</div>
 				<div class="col-13">
-					<a href="/encuentros/salvador-2015/" class="banner-portada" id="banner02" style="background-image: url('<?php echo $options['portada:banner'];?>'); <?php echo $options['portada:verbanner'];?>">
-<div class="counter"> 
+					<a href="<?php echo $options['portada:evento'];?>" class="banner-portada" id="banner02" style="background-image: url('<?php echo $options['portada:banner'];?>'); <?php echo $options['portada:verbanner'];?>">
+<div class="counter" style="<?php echo $options['portada:vercontador'];?>"> 
 <?php
 $fecha = $options['portada:fecha'];
 $dt_end = new DateTime($fecha);

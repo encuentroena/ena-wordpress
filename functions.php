@@ -215,7 +215,19 @@ global $color_scheme;
 		<td><input id="theme_settings[portada:banner]" type="text" size="36" name="theme_settings[portada:banner]" value="<?php esc_attr_e( $options['portada:banner'] ); ?>" />
 		<label for="theme_settings[portada:banner]"><?php _e( 'Imagen en PNG: 277x274px' ); ?></label></td>
 		</tr>
+		
+		<tr valign="top">
+		<th scope="row"><?php _e( 'Dirección Web del Evento Próximo' ); ?></th>
+		<td><input id="theme_settings[portada:evento]" type="text" size="36" name="theme_settings[portada:evento]" value="<?php esc_attr_e( $options['portada:evento'] ); ?>" />
+		<label for="theme_settings[portada:evento]"><?php _e( 'URL a donde dirigirá el click en el banner de evento' ); ?></label></td>
+		</tr>
 
+		<tr valign="top">
+		<th scope="row"><?php _e( 'Deshabilitar Contador de dias' ); ?></th>
+		<td><input id="theme_settings[portada:vercontador]" type="checkbox" name="theme_settings[portada:vercontador]" value="display: none;" <?php checked( $options['portada:vercontador']); ?> />
+		<label for="theme_settings[portada:vercontador]"><?php _e( 'Haga click si desea ocultar el contador de dias hacia el evento' ); ?></label></td>
+		</tr>
+		
 		<tr valign="top">
 		<th scope="row"><?php _e( 'Fecha del próximo encuentro' ); ?></th>
 		<td><input id="theme_settings[portada:fecha]" type="datetime" name="theme_settings[portada:fecha]" value="<?php esc_attr_e( $options['portada:fecha'] ); ?>" />

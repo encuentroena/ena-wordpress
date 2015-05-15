@@ -182,17 +182,69 @@ global $color_scheme;
 		<td><input id="theme_settings[portada:bajada]" type="text" size="90" name="theme_settings[portada:bajada]" value="<?php esc_attr_e( $options['portada:bajada'] ); ?>" />
 		<label for="theme_settings[portada:bajada]"><?php _e( 'Una descripción que va debajo del titulo' ); ?></label></td>
 		</tr>
+		
+		<tr valign="top">
+		<th scope="row"><?php _e( 'Palabras que circulan:' ); ?></th>
+		<td><input id="theme_settings[portada:palabra1]" type="text" size="10" name="theme_settings[portada:palabra1]" value="<?php esc_attr_e( $options['portada:palabra1'] ); ?>" />
+		<label for="theme_settings[portada:palabra1]"><?php _e( 'Palabra 1' ); ?></label></td>
+		</tr><tr><th></th>
+		<td><input id="theme_settings[portada:palabra2]" type="text" size="10" name="theme_settings[portada:palabra2]" value="<?php esc_attr_e( $options['portada:palabra2'] ); ?>" />
+		<label for="theme_settings[portada:palabra2]"><?php _e( 'Palabra 2' ); ?></label></td>
+		</tr><tr><th></th>
+		<td><input id="theme_settings[portada:palabra3]" type="text" size="10" name="theme_settings[portada:palabra3]" value="<?php esc_attr_e( $options['portada:palabra3'] ); ?>" />
+		<label for="theme_settings[portada:palabra3]"><?php _e( 'Palabra 3' ); ?></label></td>
+		</tr><tr><th></th>
+		<td><input id="theme_settings[portada:palabra4]" type="text" size="10" name="theme_settings[portada:palabra4]" value="<?php esc_attr_e( $options['portada:palabra4'] ); ?>" />
+		<label for="theme_settings[portada:palabra4]"><?php _e( 'Palabra 4' ); ?></label></td>
+		</tr><tr><th></th>
+		<td><input id="theme_settings[portada:palabra5]" type="text" size="10" name="theme_settings[portada:palabra5]" value="<?php esc_attr_e( $options['portada:palabra5'] ); ?>" />
+		<label for="theme_settings[portada:palabra5]"><?php _e( 'Palabra 5' ); ?></label></td>
+		</tr><tr><th></th>
+		<td><input id="theme_settings[portada:palabra6]" type="text" size="10" name="theme_settings[portada:palabra6]" value="<?php esc_attr_e( $options['portada:palabra6'] ); ?>" />
+		<label for="theme_settings[portada:palabra6]"><?php _e( 'Palabra 6' ); ?></label></td>
+		</tr>
 
 		<tr valign="top">
-		<th scope="row"><?php _e( 'URL del video de la portada' ); ?></th>
-		<td><input id="theme_settings[portada:video]" type="text" size="36" name="theme_settings[portada:video]" value="<?php esc_attr_e( $options['portada:video'] ); ?>" />
-		<label for="theme_settings[portada:video]"><?php _e( 'Video de YouTube' ); ?></label></td>
+		<th scope="row"><?php _e( 'Deshabilitar Banner de Evento' ); ?></th>
+		<td><input id="theme_settings[portada:verbanner]" type="checkbox" name="theme_settings[portada:verbanner]" value="display: none;" <?php checked( $options['portada:verbanner']); ?> />
+		<label for="theme_settings[portada:verbanner]"><?php _e( 'Haga click si desea ocultar el banner' ); ?></label></td>
+		</tr>
+		
+		<tr valign="top">
+		<th scope="row"><?php _e( 'URL del la imagen del Banner de Eventos' ); ?></th>
+		<td><input id="theme_settings[portada:banner]" type="text" size="36" name="theme_settings[portada:banner]" value="<?php esc_attr_e( $options['portada:banner'] ); ?>" />
+		<label for="theme_settings[portada:banner]"><?php _e( 'Imagen en PNG: 277x274px' ); ?></label></td>
 		</tr>
 
 		<tr valign="top">
 		<th scope="row"><?php _e( 'Fecha del próximo encuentro' ); ?></th>
 		<td><input id="theme_settings[portada:fecha]" type="datetime" name="theme_settings[portada:fecha]" value="<?php esc_attr_e( $options['portada:fecha'] ); ?>" />
 		<label for="theme_settings[portada:fecha]"><?php _e( 'Ej: 2011-01-13' ); ?></label></td>
+		</tr>
+		
+		<tr valign="top">
+		<th scope="row"><?php _e( 'Deshabilitar Video' ); ?></th>
+		<td><input id="theme_settings[portada:vervideo]" type="checkbox" name="theme_settings[portada:vervideo]" value="display: none;" <?php checked( $options['portada:vervideo']); ?> />
+		<label for="theme_settings[portada:vervideo]"><?php _e( 'Haga click si desea ocultar el video' ); ?></label></td>
+		</tr>
+		
+		
+		<tr valign="top">
+		<th scope="row"><?php _e( 'URL del video de la portada' ); ?></th>
+		<td><input id="theme_settings[portada:video]" type="text" size="36" name="theme_settings[portada:video]" value="<?php esc_attr_e( $options['portada:video'] ); ?>" />
+		<label for="theme_settings[portada:video]"><?php _e( 'Video de YouTube' ); ?></label></td>
+		</tr>
+		
+		<tr valign="top">
+		<th scope="row"><?php _e( 'Deshabilitar Novedades' ); ?></th>
+		<td><input id="theme_settings[portada:vernovedades]" type="checkbox" name="theme_settings[portada:vernovedades]" value="display: none;" <?php checked( $options['portada:vernovedades']); ?> />
+		<label for="theme_settings[portada:vernovedades]"><?php _e( 'Haga click si desea ocultar el recuadro de novedades' ); ?></label></td>
+		</tr>
+		
+				<tr valign="top">
+		<th scope="row"><?php _e( 'Deshabilitar Noticias de Miembros' ); ?></th>
+		<td><input id="theme_settings[portada:vernoticias]" type="checkbox" name="theme_settings[portada:vernoticias]" value="display: none;" <?php checked( $options['portada:vernoticias']); ?> />
+		<label for="theme_settings[portada:vernoticias]"><?php _e( 'Haga click si desea ocultar el recuadro de noticias de miembros' ); ?></label></td>
 		</tr>
 	</table>
 

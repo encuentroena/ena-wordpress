@@ -13,18 +13,19 @@ $options = get_option( 'theme_settings' ); ?>
 				<div class="col-23">
 					<div id="banner01" class="rw-wrapper">
 						<h1 class="rw-sentence"><?php echo $options['portada:titulo'];?><div class="rw-words rw-words-1">
-						<span style="color:white">nuestroamericana</span>
-						<span style="color:#FFFF70">emancipadora</span>
-						<span style="color:#E5B65C">decolonial</span>
-						<span style="color:#D64747">alternativa</span>
-						<span style="color:#A26DD8">popular</span>
-						<span style="color:#6699CC">transformadora</span>
+						<span style="color:white"><?php echo $options['portada:palabra1'];?></span>
+						<span style="color:#FFFF70"><?php echo $options['portada:palabra2'];?></span>
+						<span style="color:#E5B65C"><?php echo $options['portada:palabra3'];?></span>
+						<span style="color:#D64747"><?php echo $options['portada:palabra4'];?></span>
+						<span style="color:#A26DD8"><?php echo $options['portada:palabra5'];?></span>
+						<span style="color:#6699CC"><?php echo $options['portada:palabra6'];?></span>
 					</div></h1>
 						<h2><?php echo $options['portada:bajada'];?></h2>
 					</div>			
-					<div id="videobox">
+					<div id="videobox" style="<?php echo $options['portada:vervideo'];?>">
 						<iframe class="iframe" src="<?php echo $options['portada:video'];?>" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
+					<div  style="<?php echo $options['portada:vernovedades'];?>">
 					<a href="/archivo" >
 						<div id="news-ena" class="tbox">
 						</div>
@@ -87,15 +88,15 @@ $options = get_option( 'theme_settings' ); ?>
 	}
 ?>
 					
-					
-					<div style="display:;">
+					</div>
+					<div  style="<?php echo $options['portada:vernoticias'];?>">
 						<div id="news-members" class="tbox">
 						</div>	
 						<?php include('miembros_feeds.php');?>
 					</div>
 				</div>
 				<div class="col-13">
-					<a href="/encuentros/salvador-2015/" class="banner-portada" id="banner02">
+					<a href="/encuentros/salvador-2015/" class="banner-portada" id="banner02" style="background-image: url('<?php echo $options['portada:banner'];?>'); <?php echo $options['portada:verbanner'];?>">
 <div class="counter"> 
 <?php
 $fecha = $options['portada:fecha'];

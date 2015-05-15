@@ -480,13 +480,13 @@ body.custom-background {
 }
 
 #banner02 {
-    background: url("images/banner02.png") no-repeat scroll left bottom #A16CD8;
+    background: no-repeat scroll left bottom #a16cd8;
     float: left;
     height: 280px;
-    width: 280px;
-    position: relative;
-    margin-top: 20px;
     margin-left: 20px;
+    margin-top: 20px;
+    position: relative;
+    width: 280px;
 }
 
 #banner02:before {

@@ -15,6 +15,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 @import url(http://fonts.googleapis.com/css?family=Medula+One);
 
+@media (min-width: 401px) {
+
 /* Body */
 
 body.custom-background {
@@ -190,37 +192,6 @@ body.custom-background {
     width: 540px;
 }
 
-#banner01 > h1 {
-    color: #FFFFFF;
-    font-family: 'Medula One',cursive;
-    font-size: 33pt;
-    text-align: center;
-    text-indent: 33px;
-    text-transform: uppercase;
-}
-
-#banner01 > h2 {
-    color: #FFFFFF;
-    font-family: open sans;
-    font-size: 17px;
-    font-weight: normal;
-    margin: 0 20px;
-    text-align: center;
-}
-
-
-#banner01:before {
-    background: url("images/banner01-izq.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-    content: "";
-    display: block;
-    float: left;
-    height: 160px;
-    margin-left: -20px;
-    width: 20px;
-}
-
-
-
 #banner01:before {
     background: url("images/banner01-izq.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
     content: "";
@@ -243,6 +214,25 @@ body.custom-background {
     width: 20px;
 }
 
+#banner01 > h1 {
+    color: #FFFFFF;
+    font-family: 'Medula One',cursive;
+    font-size: 33pt;
+    text-align: center;
+    text-indent: 33px;
+    text-transform: uppercase;
+}
+
+#banner01 > h2 {
+    color: #FFFFFF;
+    font-family: open sans;
+    font-size: 17px;
+    font-weight: normal;
+    margin: 0 20px;
+    text-align: center;
+}
+
+
 #videobox {
     background: url("images/videobox-izq.png") no-repeat scroll 0 0 #CCCCCF;
     float: left;
@@ -264,6 +254,14 @@ body.custom-background {
 .iframe {
     background: none repeat scroll 0 0 #EEEEEE;
     height: 315px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 560px;
+}
+
+video {
+    height: 315px;
+    margin-bottom: -7px;
     margin-left: 10px;
     margin-top: 10px;
     width: 560px;
@@ -511,6 +509,11 @@ body.custom-background {
     right: -20px;
     width: 20px;
 }
+
+#banner02m {
+    display: none;
+}
+
 
 .counter {
     color: #FFFFFF;
@@ -1303,4 +1306,273 @@ visibility: hidden;
 
 td {
     border: 2px solid #808080 !important;
+}
+
+}
+
+@media (max-width: 400px) {
+
+.rw-sentence {
+    display: none;
+}
+
+#banner01 > h2 {
+    color: black;
+    font-family: open sans;
+    font-size: 17px;
+    font-weight: normal;
+    margin: 0 20px;
+    text-align: center;
+}
+
+#news-ena:after {
+    background: url("images/news-icon.png") no-repeat scroll 0 0 / 40px auto rgba(0, 0, 0, 0);
+}
+.tbox:after {
+    content: "";
+    display: block;
+    float: right;
+    height: 40px;
+    width: 40px;
+}
+#news-ena {
+    background-color: #666666;
+    background-image: url("images/news-h.png");
+background-size: auto 30px;
+  
+}
+.tbox {
+    background-position: -20px bottom;
+    background-repeat: no-repeat;
+    float: left;
+    height: 40px;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+#news-members {
+    background-color: #d64747;
+    background-image: url("images/members-h.png");
+background-size: auto 30px;
+}
+
+#news-members:after {
+    background: url("images/member-icon.png") no-repeat scroll 0 0 / 40px auto rgba(0, 0, 0, 0);
+} 
+  
+  
+  
+  
+  
+  
+.news-item {
+    background-position: center center !important;
+    background-size: cover !important;
+    float: left;
+    height: 100px;
+    position: relative;
+    width: 100%;
+}
+
+.news-item:before {
+    content: "";
+    display: block;
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+.news-item.encuentros:before {
+    background: url("images/encuentro-icon.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.news-item.ideas:before {
+    background: url("images/ideas-icon.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.news-item.ena:before {
+    background: url("images/world-icon.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.news-info {
+    bottom: 0;
+    height: 50px;
+    padding-right: 8px;
+    position: absolute;
+    width: 100%;
+}
+
+.encuentros .news-info {
+    background: none repeat scroll 0 0 rgba(161, 108, 216, 0.8);
+}
+
+.encuentros .news-info:hover {
+    background: none repeat scroll 0 0 rgba(161, 108, 216, 1.0);
+}
+
+.ideas .news-info {
+    background: none repeat scroll 0 0 rgba(229, 182, 92, 0.8);
+}
+
+.ideas .news-info:hover {
+    background: none repeat scroll 0 0 rgba(229, 182, 92, 1.0);
+}
+
+.ena .news-info {
+    background: none repeat scroll 0 0 rgba(255, 255, 112, 0.8);
+}
+
+.ena .news-info:hover {
+    background: none repeat scroll 0 0 rgba(255, 255, 112, 1.0);
+}
+
+.news-fecha {
+    color: #FFFFFF;
+    float: left;
+    font-family: "Open Sans";
+    font-size: 11pt;
+    font-weight: bold;
+    line-height: 16px;
+    padding-right: 8px;
+    padding-top: 7px;
+    text-align: right;
+    width: 50px;
+    text-transform: uppercase;
+}
+
+.news-item-focus .news-fecha {
+    padding-top: 20px;
+}
+
+.news-h {
+    font-family: "Open Sans";
+    font-weight: normal;
+    line-height: 16px;
+    margin-top: 7px;
+    padding-right: 8px;
+    text-align: right;
+        color: #FFFFFF !important;
+    text-decoration: none !important;
+}
+
+.ena .news-h {
+    color:  #000000 !important;
+    text-decoration: none !important;
+}
+
+.ena .news-fecha {
+    color: #000000;
+}
+
+.news-memb-item {
+    background: none repeat scroll 0 0 white;
+    float: left;
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.news-memb-item:hover {
+    background: none repeat scroll 0 0 lightgray;
+}
+
+.news-memb-fecha {
+    background: none repeat scroll 0 0 #d64747;
+    color: #ffffff;
+    float: left;
+    font-family: "Open Sans";
+    font-size: 10pt;
+    font-weight: bold;
+    height: 50px;
+    line-height: 16px;
+    padding-right: 8px;
+    padding-top: 7px;
+    text-align: right;
+    text-transform: uppercase;
+    width: 50px;
+}
+
+.news-memb-info {
+    color: black;
+    font-family: "Open Sans";
+    font-size: 8pt;
+    font-weight: normal;
+    line-height: 12px;
+    margin-top: 2px;
+    padding-right: 5px;
+    text-align: right;
+}
+
+.news-memb-h {
+    clear: right;
+    float: right;
+    font-size: 10pt;
+    font-weight: bold;
+    line-height: 15px;
+    margin-top: 3px;
+    width: 77%;
+}
+
+.news-memb-info a {
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+
+.news-memb-s {
+    float: right;
+}
+  
+  
+#footer-image {
+    display: none;
+}
+
+.site-info {
+    float: left;
+    font-size: 11px;
+    padding: 15px;
+    position: relative;
+    text-align: center;
+}
+  
+  
+#banner02 {
+    display: none;
+}
+
+#banner02m {
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    height: 130px;
+    width: 100%;
+}
+
+#banner02m > div {
+    background-color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+iframe {
+    height: 197px;
+    width: 100%;
+}
+
+video {
+    height: 197px;
+    width: 100%;
+}
+  
+#banner01 > h2 {
+    display: none;
+}
+
+#videobox {
+    display: none;
+}
+
+
 }

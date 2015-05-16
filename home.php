@@ -12,25 +12,33 @@ $options = get_option( 'theme_settings' ); ?>
 			<div id="content" class="site-content home" role="main">
 				<div class="col-23">
 					<div id="banner01" class="rw-wrapper">
-						<h1 class="rw-sentence"><?php echo $options['portada:titulo'];?><div class="rw-words rw-words-1">
-						<span style="color:white"><?php echo $options['portada:palabra1'];?></span>
-						<span style="color:#FFFF70"><?php echo $options['portada:palabra2'];?></span>
-						<span style="color:#E5B65C"><?php echo $options['portada:palabra3'];?></span>
-						<span style="color:#D64747"><?php echo $options['portada:palabra4'];?></span>
-						<span style="color:#A26DD8"><?php echo $options['portada:palabra5'];?></span>
-						<span style="color:#6699CC"><?php echo $options['portada:palabra6'];?></span>
-					</div></h1>
+						<h1 class="rw-sentence"><?php echo $options['portada:titulo'];?>
+						  <div class="rw-words rw-words-1">
+						    <span style="color:white"><?php echo $options['portada:palabra1'];?></span>
+						    <span style="color:#FFFF70"><?php echo $options['portada:palabra2'];?></span>
+						    <span style="color:#E5B65C"><?php echo $options['portada:palabra3'];?></span>
+						    <span style="color:#D64747"><?php echo $options['portada:palabra4'];?></span>
+						    <span style="color:#A26DD8"><?php echo $options['portada:palabra5'];?></span>
+						    <span style="color:#6699CC"><?php echo $options['portada:palabra6'];?></span>
+						  </div>
+						</h1>
 						<h2><?php echo $options['portada:bajada'];?></h2>
-					</div>			
+						
+						<a href="<?php echo $options['portada:evento'];?>" id="banner02m" style="<?php echo $options['portada:verbanner'];?>"><div style="background-image: url('<?php echo $options['portada:bannermovil'];?>');" ></div></a>
+						
+					</div>
 					<div id="videobox" style="<?php echo $options['portada:vervideo'];?>">
-						<iframe class="iframe" src="<?php echo $options['portada:video'];?>" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<video width="500" height="280" autoplay loop preload>
+  <source src="<?php echo $options['portada:video'];?>" type="video/mp4">
+Tu esplorador no tolera este video
+</video>
 					</div>
 					<div  style="<?php echo $options['portada:vernovedades'];?>">
-					<a href="/archivo" >
-						<div id="news-ena" class="tbox">
-						</div>
-					</a>
-					<?php
+					  <a href="/archivo" >
+					    <div id="news-ena" class="tbox">
+					    </div>
+					  </a>
+					  <?php
 	$args = array( 'numberposts' => '1', 'offset' => 0, );
 	$recent_posts = wp_get_recent_posts( $args );
 	
@@ -59,7 +67,7 @@ $options = get_option( 'theme_settings' ); ?>
 	}
 ?>
 
-					<?php
+					  <?php
 	$args = array( 'numberposts' => '2', 'offset' => 1, );
 	$recent_posts = wp_get_recent_posts( $args );
 	
@@ -90,9 +98,9 @@ $options = get_option( 'theme_settings' ); ?>
 					
 					</div>
 					<div  style="<?php echo $options['portada:vernoticias'];?>">
-						<div id="news-members" class="tbox">
-						</div>	
-						<?php include('miembros_feeds.php');?>
+					  <div id="news-members" class="tbox">
+					  </div>	
+					  <?php include('miembros_feeds.php');?>
 					</div>
 				</div>
 				<div class="col-13">

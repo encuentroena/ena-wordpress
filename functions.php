@@ -216,6 +216,12 @@ global $color_scheme;
 		<label for="theme_settings[portada:banner]"><?php _e( 'Imagen en PNG: 277x274px' ); ?></label></td>
 		</tr>
 		
+				<tr valign="top">
+		<th scope="row"><?php _e( 'URL del la imagen del Banner de Eventos para Movil' ); ?></th>
+		<td><input id="theme_settings[portada:bannermovil]" type="text" size="36" name="theme_settings[portada:bannermovil]" value="<?php esc_attr_e( $options['portada:bannermovil'] ); ?>" />
+		<label for="theme_settings[portada:bannermovil]"><?php _e( 'Imagen en PNG: 350x130px' ); ?></label></td>
+		</tr>
+		
 		<tr valign="top">
 		<th scope="row"><?php _e( 'Dirección Web del Evento Próximo' ); ?></th>
 		<td><input id="theme_settings[portada:evento]" type="text" size="36" name="theme_settings[portada:evento]" value="<?php esc_attr_e( $options['portada:evento'] ); ?>" />

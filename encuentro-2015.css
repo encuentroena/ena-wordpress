@@ -298,3 +298,141 @@ top: 190px;
 .t-0 {
     border: 0 none !important;
 }
+
+
+@media (max-width: 400px) {
+
+
+.page-encuentros .col-lg-9 {
+    width: 100% !important;
+}
+
+.page-encuentros .hentry {
+    padding: 0;
+}
+
+.encuentro-header {
+    height: 125px !important;
+    position: relative !important;
+    width: 100% !important;
+}
+
+.encuentro-menu {
+    display: none;
+}
+
+.page-encuentros .wrapper {
+    width: 100% !important;
+}
+
+.encuentro-titulo {
+    float: left;
+    margin-top: 20px !important;
+    padding-right: 5px !important;
+    width: 70% !important;
+}
+
+.encuentro-titulo .titulo-bf {
+    font-size: 10px !important;
+}
+
+.encuentro-titulo .titulo-af {
+    font-size: 10px !important;
+}
+.encuentro-title {
+  line-height: 19px !important;
+    font-size: 19px !important;
+}
+
+.encuentro-logo {
+    float: left;
+    margin-top: 20px !important;
+    width: 30% !important;
+        height: 100px;
+
+}
+
+.encuentro-logo img {
+    width: 55%;
+}
+
+.encuentro-contenido {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.encuentro-content {
+    font-size: 85%;
+    margin-bottom: -25px;
+    margin-top: -20px;
+    padding: 4px 5px !important;
+}
+
+.encuentro-news {
+    display: none;
+}
+
+.encuentro-principal:after {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    bottom: 0;
+    content: "";
+    height: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
+}
+
+.encuentro-principal {
+    background: none !important;
+    margin-bottom: 0  !important;
+     padding-top: 0 !important;
+}
+
+.encuentro-subpage .wrapper > h2 {
+    font-size: 20px !important;
+    margin-left: 6px !important;
+}
+
+.encuentro-subpage .wrapper > h2:before {
+    height: 17px !important;
+    margin-right: 8px !important;
+    margin-top: 0 !important;
+    width: 17px !important;
+}
+
+.encuentro-subpage .wrapper .encuentro-content {
+    margin-top: 0;
+    width: 100%;
+}
+
+.encuentro-subpage.impar {
+    margin: 0;
+    padding-bottom: 22px;
+    width: 100%;
+}
+
+.encuentro-subpage.par {
+    margin: 0;
+    padding-bottom: 22px;
+    width: 100%;
+}
+
+.encuentro-subpage.impar:before {
+  display: none;  
+}
+
+.encuentro-subpage.par:before {
+  display: none;  
+}
+
+.encuentro-subpage.impar:after {
+  display: none;  
+}
+
+.encuentro-subpage.impar:after {
+  display: none;  
+}
+
+.encuentro-subpage {
+    background: none repeat scroll 0 0 #fef1ce !important;
+}
+}

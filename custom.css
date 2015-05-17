@@ -15,6 +15,270 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 @import url(http://fonts.googleapis.com/css?family=Medula+One);
 
+.mobile {
+  display: none;
+  
+}
+.entry-header {
+    float: left;
+    height: 115px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 75px;
+    width: 580px;
+}
+
+.hentry .entry-title {
+    color: #FFFFFF;
+    float: left;
+    font-family: medula one;
+    font-size: 45px;
+    height: 115px;
+    line-height: 40px;
+    margin-top: 0;
+    padding-left: 10px;
+    padding-top: 15px;
+    position: relative;
+    text-align: left;
+    width: 450px;
+    text-transform: uppercase;
+}
+
+.entry-header .entry-title:after {
+    content: "";
+    display: block;
+    height: 115px;
+    position: absolute;
+    right: -60px;
+    top: 0;
+    width: 60px;
+}
+
+.entry-header .entry-meta {
+    float: left;
+    font-family: open sans;
+    font-size: 18px;
+    font-weight: bold;
+    height: 115px;
+    padding-right: 7px;
+    padding-top: 20px;
+    text-align: right;
+    width: 70px;
+    line-height: 18px;
+}
+
+
+
+.category-encuentros .entry-header .entry-title {
+    background: none repeat scroll 0 0 #A26DD8;
+}
+
+.category-encuentros .entry-header .entry-title:after {
+    background: url("images/post-h-af-encuentro.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.category-encuentros .entry-header .entry-meta {
+	background: url('images/post-h-bf-encuentro.png');
+}
+
+.category-ideas .entry-header .entry-title {
+    background: none repeat scroll 0 0 #E5B65C;
+}
+
+.category-ideas .entry-header .entry-title:after {
+    background: url("images/post-h-af-ideas.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.category-ideas .entry-header .entry-meta {
+    background: url("images/post-h-bf-ideas.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #CCCCCF;
+}
+
+.category-ena .entry-header .entry-title {
+    background: none repeat scroll 0 0 #FFFF70;
+    color: black !important;
+}
+
+.category-ena .entry-header .entry-title:after {
+    background: url("images/post-h-af-world.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.category-ena .entry-header .entry-meta {
+	background: url('images/post-h-bf-world.png');
+	color: black !important;
+}
+
+.category-ena .entry-excerpt {
+    color: #9B9B44;
+}
+
+.category-ideas .entry-excerpt {
+    color: #8B6F38;
+}
+
+.category-encuentros .entry-excerpt {
+    color: #624283;
+}
+
+.entry-excerpt {
+    float: left;
+    font-family: open sans;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 0 20px;
+    text-align: center;
+    text-shadow: -1px 1px 1px #000000;
+    text-transform: uppercase;
+}
+
+
+.entry-header .entry-title {
+    background: none repeat scroll 0 0 #4C4C4C;
+    color: white !important;
+}
+
+.entry-header .entry-title:after {
+    background: url("images/post-h-af.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.entry-header .entry-meta {
+	background: url('images/post-h-bf.png');
+}
+
+
+.entry-featured {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 75px;
+}
+
+.entry-social {
+    height: 75px;
+    width: 280px;
+    margin-top: -20px;
+}
+
+.category-encuentros .entry-social {
+    background: url("images/post-ep-encuentro.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.category-ideas .entry-social {
+    background: url("images/post-ep-ideas.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.category-ena .entry-social {
+    background: url("images/post-ep-world.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.entry-thumbnail {
+    background-size: cover !important;
+    background-position: center center !important;
+    height: 245px;
+    width: 280px;
+}
+
+
+.miembros .entry-content {
+    min-height: 56em;
+}
+
+.miembros .hentry .entry-title {
+    height: 95px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    padding-left: 20px;
+    width: 500px;
+}
+
+.miembros .entry-header .entry-title:before {
+    content: "";
+    height: 115px;
+    left: -20px;
+    position: absolute;
+    top: 0;
+    width: 20px;
+}
+
+.miembros .entry-header .entry-title {
+    background: none repeat scroll 0 0 #ac3939;
+}
+
+.miembros .entry-header .entry-title:after {
+    background: url("images/post-h-af-members.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.miembros .entry-header .entry-title:before {
+	background: url('images/post-h-bf-members.png');
+}
+
+.miembros .entry-social {
+    background: url("images/post-ep-members.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.miembros .entry-meta {
+    background: none repeat scroll 0 0 #692323;
+    margin-left: 20px;
+    width: 500px;
+    height: 20px;
+    padding-top: 0;
+        color: #EEEEEE;
+    font-family: open sans;
+    font-size: 9px;
+    padding-left: 20px;
+    text-transform: none;
+}
+
+.logo.web {
+    background: url("images/icon-web.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.logo {
+    color: #EEEEEE;
+    float: left;
+    font-family: open sans;
+    font-size: 10px;
+    font-weight: bold;
+    height: 16px;
+    margin-top: 2px;
+    padding-left: 19px;
+    padding-right: 10px;
+}
+
+.logo:hover{
+    color: #EEEEEE;
+}
+
+.logo.web {
+    background:  url("images/icon-web.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.logo.mail {
+    background:  url("images/icon-email.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.logo.facebook {
+    background:  url("images/icon-face.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.logo.twitter {
+    background:  url("images/icon-twit.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.miembros .foto {
+    background-size: cover !important;
+    height: 240px;
+    width: 580px;
+}
+
+.miembros .epigrafe {
+    background: url("images/foto-af-members.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #EEEEEE;
+    font-family: open sans;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    padding-left: 35px;
+}
+
 @media (min-width: 401px) {
 
 /* Body */
@@ -646,94 +910,7 @@ video {
 }
 
 /* Post Header */
-.entry-header {
-    float: left;
-    height: 115px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    margin-top: 75px;
-    width: 580px;
-}
 
-.hentry .entry-title {
-    color: #FFFFFF;
-    float: left;
-    font-family: medula one;
-    font-size: 45px;
-    height: 115px;
-    line-height: 40px;
-    margin-top: 0;
-    padding-left: 10px;
-    padding-top: 15px;
-    position: relative;
-    text-align: left;
-    width: 450px;
-    text-transform: uppercase;
-}
-
-.entry-header .entry-title:after {
-    content: "";
-    display: block;
-    height: 115px;
-    position: absolute;
-    right: -60px;
-    top: 0;
-    width: 60px;
-}
-
-.entry-header .entry-meta {
-    float: left;
-    font-family: open sans;
-    font-size: 18px;
-    font-weight: bold;
-    height: 115px;
-    padding-right: 7px;
-    padding-top: 20px;
-    text-align: right;
-    width: 70px;
-    line-height: 18px;
-}
-
-
-
-.category-encuentros .entry-header .entry-title {
-    background: none repeat scroll 0 0 #A26DD8;
-}
-
-.category-encuentros .entry-header .entry-title:after {
-    background: url("images/post-h-af-encuentro.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-
-.category-encuentros .entry-header .entry-meta {
-	background: url('images/post-h-bf-encuentro.png');
-}
-
-.category-ideas .entry-header .entry-title {
-    background: none repeat scroll 0 0 #E5B65C;
-}
-
-.category-ideas .entry-header .entry-title:after {
-    background: url("images/post-h-af-ideas.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-
-.category-ideas .entry-header .entry-meta {
-    background: url("images/post-h-bf-ideas.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-    color: #CCCCCF;
-}
-
-.category-ena .entry-header .entry-title {
-    background: none repeat scroll 0 0 #FFFF70;
-    color: black !important;
-}
-
-.category-ena .entry-header .entry-title:after {
-    background: url("images/post-h-af-world.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-
-.category-ena .entry-header .entry-meta {
-	background: url('images/post-h-bf-world.png');
-	color: black !important;
-}
 
 .entry-content {
     float: left;
@@ -744,64 +921,13 @@ video {
 }
 
 
-.category-ena .entry-excerpt {
-    color: #9B9B44;
-}
 
-.category-ideas .entry-excerpt {
-    color: #8B6F38;
-}
-
-.category-encuentros .entry-excerpt {
-    color: #624283;
-}
-
-.entry-excerpt {
-    float: left;
-    font-family: open sans;
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 28px;
-    padding: 0 20px;
-    text-align: center;
-    text-shadow: -1px 1px 1px #000000;
-    text-transform: uppercase;
-}
 
 .page .entry-featured {
     display: none;
 }
 
-.entry-featured {
-    margin-bottom: 30px;
-    margin-left: 20px;
-    margin-top: 75px;
-}
 
-.entry-social {
-    height: 75px;
-    width: 280px;
-    margin-top: -20px;
-}
-
-.category-encuentros .entry-social {
-    background: url("images/post-ep-encuentro.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-
-.category-ideas .entry-social {
-    background: url("images/post-ep-ideas.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-
-.category-ena .entry-social {
-    background: url("images/post-ep-world.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-
-.entry-thumbnail {
-    background-size: cover !important;
-    background-position: center center !important;
-    height: 245px;
-    width: 280px;
-}
 
 .entry-content blockquote {
     border-left: medium none;
@@ -908,18 +1034,6 @@ video {
     height: 450px;
 }
 
-.entry-header .entry-title {
-    background: none repeat scroll 0 0 #4C4C4C;
-    color: white !important;
-}
-
-.entry-header .entry-title:after {
-    background: url("images/post-h-af.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-
-.entry-header .entry-meta {
-	background: url('images/post-h-bf.png');
-}
 
 .page .entry-social {
     background: url("images/post-ep.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -968,55 +1082,6 @@ video {
 
 /* Member Post */
 
-.miembros .entry-content {
-    min-height: 56em;
-}
-
-.miembros .hentry .entry-title {
-    height: 95px;
-    margin-bottom: 0;
-    margin-left: 20px;
-    padding-left: 20px;
-    width: 500px;
-}
-
-.miembros .entry-header .entry-title:before {
-    content: "";
-    height: 115px;
-    left: -20px;
-    position: absolute;
-    top: 0;
-    width: 20px;
-}
-
-.miembros .entry-header .entry-title {
-    background: none repeat scroll 0 0 #ac3939;
-}
-
-.miembros .entry-header .entry-title:after {
-    background: url("images/post-h-af-members.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-
-.miembros .entry-header .entry-title:before {
-	background: url('images/post-h-bf-members.png');
-}
-
-.miembros .entry-social {
-    background: url("images/post-ep-members.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-
-.miembros .entry-meta {
-    background: none repeat scroll 0 0 #692323;
-    margin-left: 20px;
-    width: 500px;
-    height: 20px;
-    padding-top: 0;
-        color: #EEEEEE;
-    font-family: open sans;
-    font-size: 9px;
-    padding-left: 20px;
-    text-transform: none;
-}
 
 
 *:before, *:after {
@@ -1025,55 +1090,9 @@ video {
 *:before, *:after {
     box-sizing: border-box;
 }
-.logo.web {
-    background: url("images/icon-web.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-.logo {
-    color: #EEEEEE;
-    float: left;
-    font-family: open sans;
-    font-size: 10px;
-    font-weight: bold;
-    height: 16px;
-    margin-top: 2px;
-    padding-left: 19px;
-    padding-right: 10px;
-}
 
-.logo:hover{
-    color: #EEEEEE;
-}
 
-.logo.web {
-    background:  url("images/icon-web.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-.logo.mail {
-    background:  url("images/icon-email.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
 
-.logo.facebook {
-    background:  url("images/icon-face.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-
-.logo.twitter {
-    background:  url("images/icon-twit.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-
-.miembros .foto {
-    background-size: cover !important;
-    height: 240px;
-    width: 580px;
-}
-
-.miembros .epigrafe {
-    background: url("images/foto-af-members.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    color: #EEEEEE;
-    font-family: open sans;
-    font-size: 12px;
-    font-weight: bold;
-    height: 20px;
-    padding-left: 35px;
-}
 
 
 .miembros #news-members:after {
@@ -1574,5 +1593,153 @@ video {
     display: none;
 }
 
+.entry-header {
+    margin-bottom: 10px;
+    margin-left: -20px;
+    margin-top: -20px;
+    width: 110%;
+}
 
+
+.entry-header .entry-meta {
+    font-size: 12px;
+    width: 20%;
+}
+
+.hentry .entry-title {
+    font-size: 25px;
+    height: 115px;
+    line-height: 25px;
+    overflow: unset;
+    width: 60%;
+}
+
+.entry-excerpt {
+    font-family: open sans;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    text-shadow: -1px 1px 1px #000000;
+    text-transform: uppercase;
+    padding: 0px;
+}
+
+.mobile {
+  display: block;
+  
+}
+
+.entry-featured {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+
+.entry-thumbnail {
+    height: 245px;
+    width: 130%;
+}
+
+.hentry .entry-thumbnail, .hentry .entry-media {
+    margin: -30px;
+}
+
+.entry-social {
+    display: none;
+}
+
+.page-miembros .entry-header {
+    display: none;
+}
+
+#wpmm-container #map-canvas {
+    float: left;
+    height: 200px !important;
+    position: absolute !important;
+    width: 100% !important;
+}
+
+.page-miembros article {
+    display: none;
+}
+
+#wpmm-container #panel {
+    float: left;
+    height: 800px  !important;
+    position: sticky !important;
+    top: 210px !important;
+    width: 100% !important;
+}
+
+.miembros .hentry .entry-title {
+    margin-bottom: 0;
+    margin-left: 20px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.miembros .entry-header .entry-title:after {
+    right: 0;
+    top: 0;
+    width: 18% !important;
+}
+
+.miembros .entry-meta {
+    background: none repeat scroll 0 0 #692323;
+    color: #eeeeee;
+    font-family: open sans;
+    font-size: 9px;
+    height: 20px;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-top: 0;
+    text-transform: none;
+    width: 100% !important;
+}
+
+.miembros .entry-meta {
+    color: #eeeeee !important;
+    font-size: 9px !important;
+    margin-left: 20px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 20px;
+    width: 100% !important;
+        text-align: right;
+
+}
+
+.miembros .logo {
+    float: left;
+    height: 16px;
+    margin-left: 23px;
+    margin-right: -10px;
+    margin-top: 2px;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 0;
+    width: 16px;
+}
+
+.miembros .entry-thumbnail {
+    display: none;
+}
+
+.miembros .news-member {
+    display: none;
+}
+
+.miembros .foto {
+    background-position: center center !important;
+    background-size: cover !important;
+    height: 104px;
+    width: 100%;
+}
+
+.miembros .epigrafe {
+    font-size: 8px;
+    padding-left: 25px;
+}
 }

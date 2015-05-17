@@ -1,10 +1,18 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 <div class="col-23">
+  <div class="entry-featured mobile">
+		<?php if ( has_post_thumbnail() && !post_password_required() && empty( $single_featured_image )) : ?>
+		<?php $featuredImage = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+			<div class="entry-thumbnail" style="background: url('<?php echo $featuredImage; ?>')"></div>
+		<?php endif; ?>
+		<div class="entry-social"><?php include('social-icons.php');?></div>
+	</div>
 	<header class="entry-header">
 		 <?php $single_metadata = flat_get_theme_option('single_metadata'); if ( empty( $single_metadata ) ) : ?>
       <div class="entry-meta"><?php the_time('j') ?><br/><?php the_time('M') ?></div>
     <?php endif; ?>
+  
 	<h1 class="entry-title"><?php the_title(); ?></h1>
 	</header>
 	<?php $single_featured_image = flat_get_theme_option('single_featured_image'); ?>

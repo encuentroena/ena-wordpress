@@ -2,7 +2,9 @@
 
 <?php
 
-$options = get_option( 'theme_settings' ); ?>
+$options = get_option( 'theme_settings' ); 
+$thumb_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+?>
 
 <html <?php language_attributes(); ?>>
 <head>
@@ -10,6 +12,10 @@ $options = get_option( 'theme_settings' ); ?>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title><?php wp_title( '|', true, 'right' ); ?> <?php echo get_bloginfo( 'name' ); ?></title>
+	<meta property="og:title" content="<?php wp_title( '|', true, 'right' ); ?> <?php echo get_bloginfo( 'name' ); ?>"/>
+    <meta property="og:image" content="<?php echo $thumb_url ?>"/>
+    <meta property="og:site_name" content="ENA - Encuentro de Nuestra America"/>
+    <meta property="og:description" content="<?php the_excerpt(); ?>"/>
 	<link rel="shortcut icon" href="<?php echo get_bloginfo('template_url'); ?>/favicon.ico">
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />

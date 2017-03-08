@@ -1,0 +1,438 @@
+/*
+Theme Name: ENA-2017
+Theme URI: https://github.com/encuentroena
+Author: Equipo de ENA
+Description: Tema de Wordpress para el sitio principal de ENA. Basadao en el tema Flat is a WordPress Blog Theme designed by YoArts. We like to say that Flat de yoarts.com.
+Version: 0.0.1
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* Fonts */
+
+@import url(http://fonts.googleapis.com/css?family=Exo);
+
+/* Wrapper */
+
+.wrapper {
+    width: 900px;
+}
+
+/* Background */
+#primary {
+    background: none repeat scroll 0 0 #FEF1CE !important;
+    width: 150%;
+}
+
+
+.encuentro-contenido {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("images/b-borde.png");
+    background-origin: padding-box;
+    background-position: 950px 230px;
+    background-repeat: no-repeat;
+    height: 3900px;
+}
+
+/* Header */
+
+.encuentro-header {
+background: #F2F2F2 url("images/b-header.png") repeat-x bottom;
+height: 231px;
+}
+
+.encuentro-titulo {
+    float: left;
+    padding-right: 20px;
+    width: 740px;
+    margin-top: 50px;
+}
+
+.encuentro-logo {
+    float: left;
+    margin-top: 33px;
+    width: 160px;
+}
+
+.titulo-bf {
+    color: #980101;
+    float: right;
+    font-family: exo;
+    font-size: 21px;
+    text-align: right;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: bolder;
+}
+
+.titulo-af {
+    color: #336699;
+    float: right;
+    font-family: exo;
+    font-size: 18px;
+    text-align: right;
+    text-transform: uppercase;
+    width: 100%;
+    font-style: italic;
+}
+
+.encuentro-title {
+    color: black;
+    float: right;
+    font-family: exo;
+    font-size: 59px;
+    font-weight: bold;
+    line-height: 55px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: right;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+/* Menu */
+
+.encuentro-menu {
+height: 50px;
+padding-top: 3px;
+background: none;
+}
+
+.page-encuentros .col-lg-9 {
+    width: 100%;
+}
+
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+*:before, *:after {
+    box-sizing: border-box;
+}
+.encuentro-menu li {
+    background: url("images/g-arrow.png") no-repeat scroll 0 17px rgba(0, 0, 0, 0);
+    float: left;
+    height: 31px;
+    margin-right: 17px;
+    padding-left: 21px;
+}
+
+.encuentro-menu ul {
+    color: #FFFFFF !important;
+    float: left;
+    font-family: Exo;
+    font-size: 24px;
+    font-weight: bolder;
+    height: 31px;
+    list-style: none;
+    text-transform: lowercase;
+}
+
+.encuentro-menu a {
+    color: #FFFFFF !important;
+}
+
+
+/* Principal */
+.encuentro-principal {
+    background: url("images/b-back.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    margin-bottom: 77px;
+    position: relative;
+    width: 100%;
+    padding-top: 230px;
+}
+
+.encuentro-principal:after {
+    background: url("images/b-section-af.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: -77px;
+    content: "";
+    height: 77px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.encuentro-content {
+    margin-bottom: -25px;
+}
+
+/* Noticias */
+
+.encuentro-news > h2 {
+    color: #336699;
+    font-family: exo;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+
+.encuentro-news {
+width: 280px;
+float: left;
+margin-left: 20px;
+}
+
+
+.encuentro-news > h2:before {
+    background: url("images/b-li.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    float: left;
+    height: 26px;
+    margin-left: 20px;
+    margin-right: 10px;
+    position: relative;
+    width: 31px;
+}
+
+.encuentro-news .news-item-focus .news-info {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+}
+/* Subpages */
+
+.encuentro-contenido .entry-content {
+    min-height: 0px;
+}
+
+.encuentro-subpage .wrapper > h2 {
+    font-family: exo;
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+
+.encuentro-subpage .wrapper > h2:before {
+    background: url("images/b-section-h.png") no-repeat scroll 0 0 / contain rgba(0, 0, 0, 0);
+    content: "";
+    float: left;
+    height: 39px;
+    margin-right: 8px;
+    margin-top: 4px;
+    width: 39px;
+}
+
+.encuentro-subpage {
+    float: left;
+}
+
+.encuentro-subpage.impar {
+    background: url("images/b-back.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    margin-bottom: 77px;
+    margin-top: 77px;
+    position: relative;
+    width: 100%;
+}
+
+.encuentro-subpage.impar:after {
+    background: url("images/b-section-af.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: -77px;
+    content: "";
+    height: 77px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.encuentro-subpage.impar:before {
+    background: url("images/b-section-bf.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    top: -77px;
+    content: "";
+    height: 77px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.encuentro-subpage .wrapper .encuentro-content {
+    width: 880px;
+}
+
+.sections-id {
+    margin-top: -270px;
+    padding-bottom: 270px;
+    visibility: hidden;
+}
+
+/* Header Fijo */
+
+.encuentro-header{
+position: fixed;
+width: 100%;
+z-index:3;
+}
+.encuentro-menu{
+position: fixed;
+width: 100%;
+z-index:3;
+top: 190px;
+}
+
+/* Tablas */
+.t-1 {
+    border: 0 none !important;
+    color: #000000;
+    font-family: exo;
+    font-weight: bold;
+    text-align: right;
+    text-transform: uppercase;
+     padding: 0 !important;
+}
+
+.t-2 {
+    border: 0 none !important;
+    color: #D70F00;
+    font-family: exo;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 6px !important;
+}
+
+.t-0 {
+    border: 0 none !important;
+}
+
+
+@media (max-width: 400px) {
+
+
+.page-encuentros .col-lg-9 {
+    width: 100% !important;
+}
+
+.page-encuentros .hentry {
+    padding: 0;
+}
+
+.encuentro-header {
+    height: 125px !important;
+    position: relative !important;
+    width: 100% !important;
+}
+
+.encuentro-menu {
+    display: none;
+}
+
+.page-encuentros .wrapper {
+    width: 100% !important;
+}
+
+.encuentro-titulo {
+    float: left;
+    margin-top: 20px !important;
+    padding-right: 5px !important;
+    width: 70% !important;
+}
+
+.encuentro-titulo .titulo-bf {
+    font-size: 10px !important;
+}
+
+.encuentro-titulo .titulo-af {
+    font-size: 10px !important;
+}
+.encuentro-title {
+  line-height: 19px !important;
+    font-size: 19px !important;
+}
+
+.encuentro-logo {
+    float: left;
+    margin-top: 20px !important;
+    width: 30% !important;
+        height: 100px;
+
+}
+
+.encuentro-logo img {
+    width: 55%;
+}
+
+.encuentro-contenido {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.encuentro-content {
+    font-size: 85%;
+    margin-bottom: -25px;
+    margin-top: -20px;
+    padding: 4px 5px !important;
+}
+
+.encuentro-news {
+    display: none;
+}
+
+.encuentro-principal:after {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    bottom: 0;
+    content: "";
+    height: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
+}
+
+.encuentro-principal {
+    background: none !important;
+    margin-bottom: 0  !important;
+     padding-top: 0 !important;
+}
+
+.encuentro-subpage .wrapper > h2 {
+    font-size: 20px !important;
+    margin-left: 6px !important;
+}
+
+.encuentro-subpage .wrapper > h2:before {
+    height: 17px !important;
+    margin-right: 8px !important;
+    margin-top: 0 !important;
+    width: 17px !important;
+}
+
+.encuentro-subpage .wrapper .encuentro-content {
+    margin-top: 0;
+    width: 100%;
+}
+
+.encuentro-subpage.impar {
+    margin: 0;
+    padding-bottom: 22px;
+    width: 100%;
+}
+
+.encuentro-subpage.par {
+    margin: 0;
+    padding-bottom: 22px;
+    width: 100%;
+}
+
+.encuentro-subpage.impar:before {
+  display: none;  
+}
+
+.encuentro-subpage.par:before {
+  display: none;  
+}
+
+.encuentro-subpage.impar:after {
+  display: none;  
+}
+
+.encuentro-subpage.impar:after {
+  display: none;  
+}
+
+.encuentro-subpage {
+    background: none repeat scroll 0 0 #fef1ce !important;
+}
+}

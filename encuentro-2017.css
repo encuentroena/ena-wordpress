@@ -32,7 +32,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     background-attachment: scroll;
     background-clip: border-box;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url("images/b-borde.png");
+    background-image: url("images/b17-borde.png");
     background-origin: padding-box;
     background-position: 950px 230px;
     background-repeat: no-repeat;
@@ -42,7 +42,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* Header */
 
 .encuentro-header {
-background: #F2F2F2 url("images/b-header.png") repeat-x bottom;
+background: #F2F2F2 url("images/b17-header.png") repeat-x bottom;
 height: 231px;
 }
 
@@ -140,7 +140,7 @@ background: none;
 
 /* Principal */
 .encuentro-principal {
-    background: url("images/b-back.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("images/b17-back.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
     float: left;
     margin-bottom: 77px;
     position: relative;
@@ -149,7 +149,7 @@ background: none;
 }
 
 .encuentro-principal:after {
-    background: url("images/b-section-af.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("images/b17-section-af.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
     bottom: -77px;
     content: "";
     height: 77px;
@@ -181,7 +181,7 @@ margin-left: 20px;
 
 
 .encuentro-news > h2:before {
-    background: url("images/b-li.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("images/b17-li.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     content: "";
     float: left;
     height: 26px;
@@ -209,7 +209,7 @@ margin-left: 20px;
 
 
 .encuentro-subpage .wrapper > h2:before {
-    background: url("images/b-section-h.png") no-repeat scroll 0 0 / contain rgba(0, 0, 0, 0);
+    background: url("images/b17-section-h.png") no-repeat scroll 0 0 / contain rgba(0, 0, 0, 0);
     content: "";
     float: left;
     height: 39px;
@@ -223,7 +223,7 @@ margin-left: 20px;
 }
 
 .encuentro-subpage.impar {
-    background: url("images/b-back.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("images/b17-back.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
     float: left;
     margin-bottom: 77px;
     margin-top: 77px;
@@ -232,7 +232,7 @@ margin-left: 20px;
 }
 
 .encuentro-subpage.impar:after {
-    background: url("images/b-section-af.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("images/b17-section-af.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
     bottom: -77px;
     content: "";
     height: 77px;
@@ -242,7 +242,7 @@ margin-left: 20px;
 }
 
 .encuentro-subpage.impar:before {
-    background: url("images/b-section-bf.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("images/b17-section-bf.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
     top: -77px;
     content: "";
     height: 77px;
